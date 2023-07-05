@@ -33,5 +33,12 @@ images:
 issues: 0
 mark: 50
 mod_scheme: doc/gen/LION1CELL02A-schematic.pdf
-tags: []
+tags:
+- mlab
+- mlab-module
+- kicad
+- kicad-pcb
+- kicad-project
+- mlab-kicad
+- pcb
 title: LION1CELL02
