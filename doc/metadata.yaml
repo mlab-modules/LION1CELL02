@@ -2,6 +2,7 @@ description: Single-cell Li-Ion Battery management system with I2C interface
 github_branch: LION1CELL02A
 github_branches:
 - LION1CELL02A
+github_description: Single-cell Li-Ion Battery management system with I2C interface
 github_repo: LION1CELL02
 github_url: https://github.com/mlab-modules/LION1CELL02
 homepage: false
@@ -43,4 +44,4 @@ tags:
 - mlab-kicad
 - pcb
 title: LION1CELL02
-updated: '2023-09-16T22:02:05.928193+00:00'
+updated: '2023-09-17T11:30:15.453461+00:00'
