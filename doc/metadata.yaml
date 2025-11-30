@@ -27,13 +27,16 @@ images:
 - doc/img/FLIR/FLIR0211.jpg
 - doc/img/FLIR/FLIR0213.jpg
 - doc/img/LION2CELL01D_QRcode.png
-- doc/gen/img/LION2CELL01D-top.png
-- doc/gen/img/LION2CELL01D-bottom.png
-- doc/gen/LION2CELL01D-schematic.svg
-- doc/gen/LION1CELL02A-schematic.svg
+- doc/gen/img/LION1CELL02-bottom.png
+- doc/gen/img/LION1CELL02-top.png
+- doc/gen/LION1CELL02-schematic.svg
+- doc/gen/img/LION1CELL02-top.svg
+- doc/gen/img/LION1CELL02-bottom.svg
+- hw/cam_profi/assembly/LION1CELL02-assembly_page_02.svg
+- hw/cam_profi/assembly/LION1CELL02-assembly_page_01.svg
 issues: 0
 mark: 50
-mod_scheme: doc/gen/LION1CELL02A-schematic.pdf
+mod_scheme: doc/gen/LION1CELL02-schematic.pdf
 status: 1
 tags:
 - mlab
@@ -44,4 +47,4 @@ tags:
 - mlab-kicad
 - pcb
 title: LION1CELL02
-updated: '2025-11-30T18:43:50.596085+00:00'
+updated: '2025-11-30T18:45:51.689342+00:00'
