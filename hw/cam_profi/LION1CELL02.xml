@@ -2,12 +2,12 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/LION1CELL02.kicad_sch</source>
-    <date>2026-01-15T15:48:59+0000</date>
+    <date>2026-01-16T22:06:09+0000</date>
     <tool>Eeschema 9.0.6+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>LION1CELL02A</title>
-        <company>Mlab.cz</company>
+        <company>MLAB.cz</company>
         <rev/>
         <date>2024-07-17</date>
         <source>LION1CELL02.kicad_sch</source>
