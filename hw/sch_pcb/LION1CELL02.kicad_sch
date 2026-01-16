@@ -7,7 +7,7 @@
 	(title_block
 		(title "LION1CELL02A")
 		(date "2024-07-17")
-		(company "Mlab.cz")
+		(company "MLAB.cz")
 		(comment 1 "Singe cell Li-ion battery management\\nwith USB-C charger")
 	)
 	(lib_symbols
