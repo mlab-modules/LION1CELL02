@@ -1,15 +1,8 @@
+# LION1CELL02 - Single-cell Li-Ion BMS power supply with I2C interface 
 
-[Czech](./README.cs.md)
-<!--- module --->
-# LION2CELL01D
-<!--- Emodule --->
+![LION1CELL02](/doc/img/LION1CELL02_top_big.jpg)
 
-<!--- subtitle --->Li-ion battery management module<!--- Esubtitle --->
-
-![LION2CELL01D](/doc/img/LION2CELL01D_top_big.jpg)
-
-<!--- description --->
-Integrated battery management solution for 18650 li-ion batteries. It can measure remaining energy in battery, perform charging cycle from external power source and protect batteries against over voltage or over draining conditions.
+Integrated battery management solution for 18650 Li-ion batteries. It can measure remaining energy in the battery, perform a charging cycle from a USB-C power source, and protect batteries against overvoltage or overdraining conditions.
 
 ## Features 
 
@@ -21,7 +14,7 @@ Integrated battery management solution for 18650 li-ion batteries. It can measur
 
 ## Connection
 
-The module could communicate on I2C or HDQ bus.
+The module could communicate on the I2C or HDQ bus.
 
 | Mark | signal| Description |
 |------|-----|---|
@@ -31,5 +24,3 @@ The module could communicate on I2C or HDQ bus.
 |4 | CE | |
 |5 | STAT1 | |
 |6 | CMODE | |
-
-<!--- Edescription --->
