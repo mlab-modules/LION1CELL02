@@ -15,16 +15,16 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -6.35 6.35 0)
+			(property "Reference" "U3"
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "BQ297xy"
-				(at 5.08 -6.35 0)
+			(property "Value" "BQ29700DSER"
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -78,8 +78,8 @@
 			)
 			(symbol "BQ297xy_0_1"
 				(rectangle
-					(start -7.62 5.08)
-					(end 7.62 -5.08)
+					(start -8.89 5.842)
+					(end 8.89 -6.223)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -91,7 +91,7 @@
 			)
 			(symbol "BQ297xy_1_1"
 				(pin input line
-					(at -10.16 2.54 0)
+					(at -11.43 2.54 0)
 					(length 2.54)
 					(name "BAT"
 						(effects
@@ -109,7 +109,7 @@
 					)
 				)
 				(pin input line
-					(at -10.16 -2.54 0)
+					(at -11.43 -2.54 0)
 					(length 2.54)
 					(name "V-"
 						(effects
@@ -126,17 +126,35 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -7.62 90)
+				(pin output line
+					(at -2.54 -8.89 90)
 					(length 2.54)
-					(name "VSS"
+					(name "Dout"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 2.54 -8.89 90)
+					(length 2.54)
+					(name "Cout"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -163,17 +181,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at 10.16 2.54 180)
+				(pin input line
+					(at 11.43 2.54 180)
 					(length 2.54)
-					(name "Cout"
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -181,17 +199,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at 10.16 -2.54 180)
+				(pin power_in line
+					(at 11.43 -2.54 180)
 					(length 2.54)
-					(name "Dout"
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6653,22 +6671,28 @@
 		(uuid "04bf9e50-c9d4-414c-9d8b-2381b9e2b1e5")
 	)
 	(junction
-		(at 245.11 226.06)
+		(at 242.57 226.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "060b9c8e-22f0-4450-aa19-42db0c80feb2")
 	)
 	(junction
-		(at 232.41 190.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "15278c7b-ca97-4543-91ea-bdc69a0e4bda")
-	)
-	(junction
-		(at 223.52 229.87)
+		(at 218.44 233.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "199cb20d-710f-47ce-95c9-013f33f38ed6")
+	)
+	(junction
+		(at 213.36 220.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c2bf83f-69c3-4e04-91c9-0e9dfd577d46")
+	)
+	(junction
+		(at 229.87 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d121319-c907-499c-bdab-757bd106ac01")
 	)
 	(junction
 		(at 317.5 99.06)
@@ -6683,10 +6707,10 @@
 		(uuid "28aeb1bf-8b20-4113-a50b-c22369477ae0")
 	)
 	(junction
-		(at 172.72 229.87)
+		(at 173.99 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "31d24e69-b0f8-4416-a762-b649280e632c")
+		(uuid "31c6a59e-0a02-4c3e-bf55-b99a1ef3d1d2")
 	)
 	(junction
 		(at 191.77 95.25)
@@ -6707,10 +6731,10 @@
 		(uuid "3d2be462-b09e-49f7-90f6-efb515efa1d0")
 	)
 	(junction
-		(at 172.72 190.5)
+		(at 187.96 233.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3fb69884-b828-4ea7-b34f-285e6969a2c4")
+		(uuid "41e87650-b829-4b99-94b3-5e883fabb4c0")
 	)
 	(junction
 		(at 170.18 88.9)
@@ -6719,7 +6743,7 @@
 		(uuid "4ed2832b-0332-4790-860a-c203cbe9cbef")
 	)
 	(junction
-		(at 245.11 215.9)
+		(at 242.57 213.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "51a2735b-416b-4bcd-90f9-ce7e9acc1692")
@@ -6785,6 +6809,12 @@
 		(uuid "63146dc5-4038-4d7d-8e8c-5b8b7b4ef921")
 	)
 	(junction
+		(at 229.87 213.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66d4585c-8b55-461f-b5c8-f952902e0d3f")
+	)
+	(junction
 		(at 44.45 269.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6803,22 +6833,16 @@
 		(uuid "6b59eb26-0fd2-4716-b5b0-f57e4501bb23")
 	)
 	(junction
-		(at 200.66 229.87)
+		(at 195.58 233.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d1706a1-a8ed-4b4d-9491-d78ef0e2a8d9")
 	)
 	(junction
-		(at 245.11 220.98)
+		(at 242.57 220.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6db37765-e6e8-430c-9e28-99a415c1aee5")
-	)
-	(junction
-		(at 172.72 205.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "753802cb-660d-4e47-a6fe-611c20f6c437")
 	)
 	(junction
 		(at 328.93 40.64)
@@ -6831,6 +6855,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7c1c4e2e-9d1c-4d4e-afca-6e940fe7e7da")
+	)
+	(junction
+		(at 200.66 220.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85f2e3df-414e-4c9c-ba9b-577903e9328e")
 	)
 	(junction
 		(at 314.96 217.17)
@@ -6887,12 +6917,6 @@
 		(uuid "aedbc548-099d-4f89-a1f4-3a3b4a86a715")
 	)
 	(junction
-		(at 218.44 217.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b0de2931-1998-48cc-92d3-bb5d98f417cd")
-	)
-	(junction
 		(at 336.55 148.59)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -6905,22 +6929,16 @@
 		(uuid "c1dc106f-1bdf-436a-98d7-2e32102491be")
 	)
 	(junction
-		(at 177.8 229.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c40d5353-e7b9-477a-a838-2ba104438762")
-	)
-	(junction
 		(at 336.55 167.64)
 		(diameter 1.016)
 		(color 0 0 0 0)
 		(uuid "c5aeb725-5687-4a40-8bc2-428785397dc0")
 	)
 	(junction
-		(at 205.74 217.17)
+		(at 173.99 233.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "caa436c0-51c7-4b0f-bc0a-029feee9765e")
+		(uuid "cb53ef93-70ef-49fb-80e1-da2b643dc5d3")
 	)
 	(junction
 		(at 284.48 171.45)
@@ -6939,6 +6957,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e02a0b44-9cc6-4eb5-8bb6-fb5c2b367c2e")
+	)
+	(junction
+		(at 173.99 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5311768-79cd-4ac4-bace-e65625af0aa1")
 	)
 	(junction
 		(at 83.82 115.57)
@@ -7001,6 +7025,10 @@
 	(no_connect
 		(at 60.96 58.42)
 		(uuid "83f68567-1e29-44f3-80e2-4aee693e4be4")
+	)
+	(no_connect
+		(at 218.44 208.28)
+		(uuid "dfecbdcd-8f0c-4478-9e88-d6a4c820d7cb")
 	)
 	(wire
 		(pts
@@ -7124,6 +7152,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 219.71) (xy 204.47 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a606943-3d0d-4980-9988-e82924943ac4")
+	)
+	(wire
+		(pts
 			(xy 191.77 95.25) (xy 191.77 93.98)
 		)
 		(stroke
@@ -7141,16 +7179,6 @@
 			(type default)
 		)
 		(uuid "0cdad285-9eb4-4380-82d9-f10a2f32e714")
-	)
-	(wire
-		(pts
-			(xy 245.11 215.9) (xy 245.11 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d3ec7b2-eb56-40f9-b801-d31b284bccdc")
 	)
 	(wire
 		(pts
@@ -7254,7 +7282,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 190.5) (xy 172.72 195.58)
+			(xy 173.99 189.23) (xy 173.99 196.85)
 		)
 		(stroke
 			(width 0)
@@ -7364,7 +7392,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 226.06) (xy 250.19 226.06)
+			(xy 257.81 226.06) (xy 247.65 226.06)
 		)
 		(stroke
 			(width 0)
@@ -7534,13 +7562,23 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 229.87) (xy 210.82 229.87)
+			(xy 208.28 233.68) (xy 205.74 233.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "38eb1d80-b2ed-43c8-91b4-bc7bb5393765")
+	)
+	(wire
+		(pts
+			(xy 242.57 233.68) (xy 218.44 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39e5635a-80e7-4792-af5a-55e8782101bc")
 	)
 	(wire
 		(pts
@@ -7634,7 +7672,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 190.5) (xy 232.41 195.58)
+			(xy 229.87 189.23) (xy 229.87 193.04)
 		)
 		(stroke
 			(width 0)
@@ -7714,36 +7752,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 217.17) (xy 218.44 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49933b65-e0fa-456e-b086-b72d22a81c6b")
-	)
-	(wire
-		(pts
-			(xy 172.72 229.87) (xy 177.8 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49f875dc-4342-46f4-bc4b-96970f86a67e")
-	)
-	(wire
-		(pts
-			(xy 172.72 205.74) (xy 172.72 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b9cf632-0f6d-4f19-b281-85dca4992719")
-	)
-	(wire
-		(pts
 			(xy 335.28 156.21) (xy 336.55 156.21)
 		)
 		(stroke
@@ -7761,16 +7769,6 @@
 			(type solid)
 		)
 		(uuid "4bdcd93a-dc96-4e22-be41-55bde0ca2c58")
-	)
-	(wire
-		(pts
-			(xy 201.93 205.74) (xy 218.44 205.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cd93e08-f01f-4ba5-9e0e-5caa72c5cde7")
 	)
 	(wire
 		(pts
@@ -7804,23 +7802,13 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 226.06) (xy 177.8 229.87)
+			(xy 229.87 189.23) (xy 242.57 189.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4fad86f5-7e0f-4325-b526-fe91a0c34eae")
-	)
-	(wire
-		(pts
-			(xy 218.44 205.74) (xy 218.44 217.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fbb30f5-496d-4356-a757-c40a033a9b31")
+		(uuid "4f4205d9-30ed-4681-8af8-311bf53b6788")
 	)
 	(wire
 		(pts
@@ -7894,7 +7882,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 190.5) (xy 245.11 195.58)
+			(xy 242.57 189.23) (xy 242.57 193.04)
 		)
 		(stroke
 			(width 0)
@@ -7921,16 +7909,6 @@
 			(type default)
 		)
 		(uuid "57359001-0340-4331-a8e5-d60d06b70baf")
-	)
-	(wire
-		(pts
-			(xy 177.8 229.87) (xy 200.66 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "576faa61-d982-4b3a-adfa-027cc41b9cab")
 	)
 	(wire
 		(pts
@@ -8004,7 +7982,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 226.06) (xy 200.66 229.87)
+			(xy 195.58 229.87) (xy 195.58 233.68)
 		)
 		(stroke
 			(width 0)
@@ -8042,6 +8020,16 @@
 		)
 		(uuid "6205867d-2e15-4ed2-9e7e-68fea7108dd4")
 	)
+	(wire
+		(pts
+			(xy 173.99 208.28) (xy 195.58 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62267d9a-8b9c-4174-b5a2-cad1818e20fd")
+	)
 	(polyline
 		(pts
 			(xy 337.82 147.32) (xy 337.82 153.67)
@@ -8054,7 +8042,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 217.17) (xy 205.74 222.25)
+			(xy 200.66 220.98) (xy 200.66 226.06)
 		)
 		(stroke
 			(width 0)
@@ -8081,16 +8069,6 @@
 			(type default)
 		)
 		(uuid "6663569e-fda5-42a9-be06-49c5fc5239dc")
-	)
-	(wire
-		(pts
-			(xy 201.93 210.82) (xy 205.74 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "686e58a0-c855-4cf6-847a-1d6c15c10d36")
 	)
 	(wire
 		(pts
@@ -8124,33 +8102,13 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 220.98) (xy 250.19 220.98)
+			(xy 257.81 220.98) (xy 247.65 220.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6bc66326-171b-4efd-9945-45f9c7ce19e3")
-	)
-	(wire
-		(pts
-			(xy 172.72 190.5) (xy 232.41 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d58ee4f-35bd-4f9b-bab7-05775f125510")
-	)
-	(wire
-		(pts
-			(xy 223.52 229.87) (xy 245.11 229.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dc3fedf-8299-4306-8621-5ef3db1456f7")
 	)
 	(wire
 		(pts
@@ -8164,7 +8122,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 215.9) (xy 245.11 215.9)
+			(xy 229.87 213.36) (xy 242.57 213.36)
 		)
 		(stroke
 			(width 0)
@@ -8184,7 +8142,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 229.87) (xy 245.11 226.06)
+			(xy 242.57 233.68) (xy 242.57 226.06)
 		)
 		(stroke
 			(width 0)
@@ -8244,16 +8202,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 190.5) (xy 245.11 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "784aad13-03c4-46f5-a29b-45576ea6ce93")
-	)
-	(wire
-		(pts
 			(xy 217.17 60.96) (xy 217.17 59.69)
 		)
 		(stroke
@@ -8304,7 +8252,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 204.47) (xy 245.11 203.2)
+			(xy 242.57 201.93) (xy 242.57 200.66)
 		)
 		(stroke
 			(width 0)
@@ -8394,7 +8342,17 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 229.87) (xy 172.72 229.87)
+			(xy 173.99 201.93) (xy 173.99 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86babeda-43d8-447b-9e15-2465283feaf6")
+	)
+	(wire
+		(pts
+			(xy 172.72 233.68) (xy 173.99 233.68)
 		)
 		(stroke
 			(width 0)
@@ -8434,17 +8392,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 210.82) (xy 181.61 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c4f942c-8b43-4f9a-8c69-2a7556cf0ad4")
-	)
-	(wire
-		(pts
-			(xy 171.45 190.5) (xy 172.72 190.5)
+			(xy 172.72 189.23) (xy 173.99 189.23)
 		)
 		(stroke
 			(width 0)
@@ -8534,13 +8482,13 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 210.82) (xy 177.8 220.98)
+			(xy 187.96 233.68) (xy 195.58 233.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "94422439-d9c0-49ac-bfce-44ccfaafc4fa")
+		(uuid "95679313-9338-47c3-a56c-2be6513c031d")
 	)
 	(wire
 		(pts
@@ -8644,7 +8592,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 217.17) (xy 223.52 220.98)
+			(xy 218.44 220.98) (xy 218.44 224.79)
 		)
 		(stroke
 			(width 0)
@@ -8694,7 +8642,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 226.06) (xy 223.52 229.87)
+			(xy 218.44 229.87) (xy 218.44 233.68)
 		)
 		(stroke
 			(width 0)
@@ -8714,7 +8662,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 217.17) (xy 200.66 217.17)
+			(xy 200.66 220.98) (xy 195.58 220.98)
 		)
 		(stroke
 			(width 0)
@@ -8741,6 +8689,16 @@
 			(type default)
 		)
 		(uuid "a9df1c39-6f27-4ffa-a933-24f03d3410ce")
+	)
+	(wire
+		(pts
+			(xy 187.96 213.36) (xy 195.58 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab38ceb2-7930-491e-b360-e89dcc6ce386")
 	)
 	(wire
 		(pts
@@ -8834,7 +8792,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 212.09) (xy 232.41 215.9)
+			(xy 229.87 209.55) (xy 229.87 213.36)
 		)
 		(stroke
 			(width 0)
@@ -8884,6 +8842,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 220.98) (xy 200.66 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5782308-64fa-4ea3-ac51-f90d027fe771")
+	)
+	(wire
+		(pts
 			(xy 335.28 163.83) (xy 336.55 163.83)
 		)
 		(stroke
@@ -8911,6 +8879,16 @@
 			(type solid)
 		)
 		(uuid "b760ec93-de29-447a-a816-fce8144bbd53")
+	)
+	(wire
+		(pts
+			(xy 173.99 208.28) (xy 173.99 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b77df455-c9eb-425a-9051-01594a573503")
 	)
 	(wire
 		(pts
@@ -8944,6 +8922,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 220.98) (xy 213.36 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0ba3936-e6b7-4c30-8526-e28047b475ff")
+	)
+	(wire
+		(pts
 			(xy 307.34 187.96) (xy 307.34 186.69)
 		)
 		(stroke
@@ -8971,6 +8959,16 @@
 			(type default)
 		)
 		(uuid "c141095a-00e8-4903-9f23-9e844415093e")
+	)
+	(wire
+		(pts
+			(xy 242.57 209.55) (xy 242.57 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1a3682c-6536-4c1a-90cc-a9334fc43d01")
 	)
 	(wire
 		(pts
@@ -9004,16 +9002,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 212.09) (xy 245.11 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c48154f7-0d6c-480d-90df-1a14a6ffd916")
-	)
-	(wire
-		(pts
 			(xy 57.15 231.14) (xy 58.42 231.14)
 		)
 		(stroke
@@ -9034,13 +9022,13 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 218.44) (xy 191.77 215.9)
+			(xy 209.55 219.71) (xy 209.55 220.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c7c2280e-6aa6-4bfa-b0b6-662cea6237c5")
+		(uuid "cdd8011a-20cd-406f-8555-d659a6ef260b")
 	)
 	(wire
 		(pts
@@ -9074,16 +9062,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 200.66) (xy 172.72 205.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d345142c-f6fb-4dca-b4d6-3f0e6dacde46")
-	)
-	(wire
-		(pts
 			(xy 57.15 182.88) (xy 57.15 184.15)
 		)
 		(stroke
@@ -9104,13 +9082,13 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 205.74) (xy 181.61 205.74)
+			(xy 218.44 213.36) (xy 229.87 213.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d60f885d-db55-4ec9-a0c3-dd75119f1924")
+		(uuid "d5b80eec-87e9-4eeb-879d-ccf127bb99f5")
 	)
 	(wire
 		(pts
@@ -9194,23 +9172,13 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 217.17) (xy 200.66 220.98)
+			(xy 195.58 220.98) (xy 195.58 224.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "db3aae88-605f-4cd3-8d5a-2c1e6cbd0db4")
-	)
-	(wire
-		(pts
-			(xy 205.74 210.82) (xy 205.74 217.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db7fd67c-db43-47f1-8b24-a0bfd527697e")
 	)
 	(wire
 		(pts
@@ -9224,6 +9192,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 233.68) (xy 187.96 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc0449ff-b596-4f39-bf27-5e29ea54e0d8")
+	)
+	(wire
+		(pts
 			(xy 53.34 148.59) (xy 53.34 143.51)
 		)
 		(stroke
@@ -9234,7 +9212,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 229.87) (xy 172.72 231.14)
+			(xy 173.99 233.68) (xy 173.99 234.95)
 		)
 		(stroke
 			(width 0)
@@ -9404,13 +9382,33 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 215.9) (xy 172.72 229.87)
+			(xy 173.99 223.52) (xy 173.99 233.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e7a594db-f2a7-49ec-a467-81c6e9997cd1")
+	)
+	(wire
+		(pts
+			(xy 213.36 220.98) (xy 218.44 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e80bb0d3-dcc0-4c4e-8b8d-e6ed49d3e048")
+	)
+	(wire
+		(pts
+			(xy 173.99 189.23) (xy 229.87 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e887a110-51a5-4426-8db0-8c4f54ac1636")
 	)
 	(wire
 		(pts
@@ -9454,7 +9452,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 204.47) (xy 232.41 203.2)
+			(xy 229.87 201.93) (xy 229.87 200.66)
 		)
 		(stroke
 			(width 0)
@@ -9471,6 +9469,16 @@
 			(type solid)
 		)
 		(uuid "eda2b06b-d834-4bbd-9adb-61285267a9ac")
+	)
+	(wire
+		(pts
+			(xy 209.55 220.98) (xy 213.36 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee290f8d-f504-478a-b09b-c932f18b74a1")
 	)
 	(wire
 		(pts
@@ -9491,6 +9499,16 @@
 			(type solid)
 		)
 		(uuid "eef226c5-9d46-4362-86c1-4bce13e98eed")
+	)
+	(wire
+		(pts
+			(xy 187.96 224.79) (xy 187.96 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef4c5e04-be15-4a30-8a65-889d70c382fb")
 	)
 	(wire
 		(pts
@@ -9521,6 +9539,16 @@
 			(type solid)
 		)
 		(uuid "f15608b4-a0eb-48db-8bce-3435e58f1697")
+	)
+	(wire
+		(pts
+			(xy 187.96 229.87) (xy 187.96 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f19f3d7b-e2a9-4e14-b182-bb5b9b187a47")
 	)
 	(wire
 		(pts
@@ -9564,16 +9592,6 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 217.17) (xy 218.44 217.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb37ee6d-6648-4107-aff7-9cc7ee0340f4")
-	)
-	(wire
-		(pts
 			(xy 326.39 152.4) (xy 330.2 152.4)
 		)
 		(stroke
@@ -9581,6 +9599,16 @@
 			(type solid)
 		)
 		(uuid "fcc25eda-e09f-4fea-b080-1f9a46adf3a5")
+	)
+	(wire
+		(pts
+			(xy 242.57 213.36) (xy 242.57 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdb392af-90b8-4dc1-88eb-51de755cb8be")
 	)
 	(wire
 		(pts
@@ -9623,7 +9651,7 @@
 		(uuid "2d31d8e4-a180-4401-acba-997c53db460a")
 	)
 	(label "GAUGE_SRP"
-		(at 260.35 220.98 180)
+		(at 257.81 220.98 180)
 		(effects
 			(font
 				(size 1 1)
@@ -9663,7 +9691,7 @@
 		(uuid "49a30aa9-bda4-4056-8977-f919294ca7f0")
 	)
 	(label "-BAT"
-		(at 236.22 215.9 0)
+		(at 233.68 213.36 0)
 		(effects
 			(font
 				(size 1 1)
@@ -9691,16 +9719,6 @@
 			(justify left bottom)
 		)
 		(uuid "57e2f35b-eb98-4bf3-81c9-0b89278550ef")
-	)
-	(label "-BAT"
-		(at 191.77 218.44 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "5e05227d-4f45-4861-8fcd-4aa94b774891")
 	)
 	(label "SCL"
 		(at 96.52 266.7 0)
@@ -9813,7 +9831,7 @@
 		(uuid "a8c90d3e-c027-4984-a926-b18805d4a24d")
 	)
 	(label "GAUGE_SRN"
-		(at 260.35 226.06 180)
+		(at 257.81 226.06 180)
 		(effects
 			(font
 				(size 1 1)
@@ -9961,7 +9979,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00347e6a-5208-4616-8b89-cb918479ddfa")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR036"
 			(at 190.5 157.48 0)
 			(effects
 				(font
@@ -10012,7 +10030,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR031")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -10027,7 +10045,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "005b9881-30ee-416c-a39f-3fc0f24b3ea4")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 67.31 49.53 0)
 			(effects
 				(font
@@ -10090,7 +10108,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -10105,7 +10123,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00e4eb29-3028-4f24-bb53-58246bdd7f5d")
-		(property "Reference" "R24"
+		(property "Reference" "R17"
 			(at 323.85 162.56 90)
 			(effects
 				(font
@@ -10166,7 +10184,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R24")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -10181,7 +10199,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "05484046-771a-49ee-a63f-7cfa4a6b45a9")
-		(property "Reference" "C19"
+		(property "Reference" "C12"
 			(at 349.25 93.98 0)
 			(effects
 				(font
@@ -10244,7 +10262,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C19")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -10260,7 +10278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0802f24e-a739-4d36-abd2-4c5685497783")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR028"
 			(at 83.82 130.81 0)
 			(effects
 				(font
@@ -10311,7 +10329,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR011")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -10327,7 +10345,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "09fbf939-da95-4a82-8a7e-76d9cd64ebbb")
-		(property "Reference" "C17"
+		(property "Reference" "C4"
 			(at 326.39 53.975 0)
 			(effects
 				(font
@@ -10390,7 +10408,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C17")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -10405,7 +10423,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a48d2b4-3c6c-4db2-a9ef-8f6060e3e997")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR053"
 			(at 59.69 278.13 0)
 			(effects
 				(font
@@ -10456,7 +10474,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR023")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -10471,7 +10489,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a58de3e-ddf4-4e55-a48d-f6c7e0a45910")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR049"
 			(at 111.76 260.35 0)
 			(effects
 				(font
@@ -10521,7 +10539,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR054")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -10536,7 +10554,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0ac2f455-c139-4461-b66b-c886f56372ba")
-		(property "Reference" "R8"
+		(property "Reference" "R24"
 			(at 93.345 198.12 90)
 			(effects
 				(font
@@ -10597,7 +10615,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R8")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -10613,7 +10631,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0af8c58e-4dfa-4277-8f2f-301d73e435b7")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR054"
 			(at 96.52 279.4 0)
 			(effects
 				(font
@@ -10664,7 +10682,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR035")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -10679,7 +10697,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0be3baca-7d0f-4085-967c-5fd3c910ab69")
-		(property "Reference" "R25"
+		(property "Reference" "R18"
 			(at 323.85 166.37 90)
 			(effects
 				(font
@@ -10740,7 +10758,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R25")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -10824,7 +10842,7 @@
 	)
 	(symbol
 		(lib_id "MLAB_BATERY:2xBATT")
-		(at 245.11 209.55 0)
+		(at 242.57 207.01 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10834,7 +10852,7 @@
 		(fields_autoplaced yes)
 		(uuid "0d82ed26-f462-4a9f-ba6a-8f2b741adc9f")
 		(property "Reference" "BT1"
-			(at 241.3 206.2479 0)
+			(at 238.76 203.7079 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10843,7 +10861,7 @@
 			)
 		)
 		(property "Value" "BATT"
-			(at 241.3 208.7879 0)
+			(at 238.76 206.2479 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10852,7 +10870,7 @@
 			)
 		)
 		(property "Footprint" "Mlab_Batery:BAT_BK-18650-PC4"
-			(at 245.11 208.026 90)
+			(at 242.57 205.486 90)
 			(effects
 				(font
 					(size 1 1)
@@ -10861,7 +10879,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 245.11 208.026 90)
+			(at 242.57 205.486 90)
 			(effects
 				(font
 					(size 1 1)
@@ -10870,7 +10888,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 245.11 209.55 0)
+			(at 242.57 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10879,7 +10897,7 @@
 			)
 		)
 		(property "UST_ID" "5c70984412875079b91f87e9"
-			(at 245.11 209.55 0)
+			(at 242.57 207.01 0)
 			(effects
 				(font
 					(size 1 1)
@@ -10918,7 +10936,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0e43a2f6-02ba-4e62-a4a3-2026dfbe1a0b")
-		(property "Reference" "Q2"
+		(property "Reference" "Q3"
 			(at 97.79 190.5 0)
 			(effects
 				(font
@@ -11011,7 +11029,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "Q2")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -11171,7 +11189,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1463e70f-57b3-488d-a9ec-9721543e9b48")
-		(property "Reference" "R27"
+		(property "Reference" "R20"
 			(at 323.85 173.99 90)
 			(effects
 				(font
@@ -11232,7 +11250,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R27")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -11247,7 +11265,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15aa788c-7d5e-4e79-bcb7-41317ac76459")
-		(property "Reference" "C4"
+		(property "Reference" "C17"
 			(at 96.52 118.11 0)
 			(effects
 				(font
@@ -11310,7 +11328,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C4")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -11401,7 +11419,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "18c9b341-b788-425b-87a8-1ad61aa6c4cb")
-		(property "Reference" "C8"
+		(property "Reference" "C13"
 			(at 187.96 101.6 0)
 			(effects
 				(font
@@ -11464,7 +11482,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C8")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -11479,7 +11497,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "191a5339-224a-45db-8ced-070e29d8b3c3")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR011"
 			(at 175.26 76.2 0)
 			(effects
 				(font
@@ -11530,7 +11548,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR028")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -11538,15 +11556,15 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 172.72 213.36 0)
+		(at 173.99 220.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "1ae0618f-582b-4c15-b959-f3a3ca52f962")
-		(property "Reference" "C7"
-			(at 169.926 211.582 0)
+		(property "Reference" "C19"
+			(at 171.196 219.202 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11555,7 +11573,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 168.148 215.392 0)
+			(at 169.418 223.012 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11564,7 +11582,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 172.72 213.36 0)
+			(at 173.99 220.98 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11573,7 +11591,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 213.36 0)
+			(at 173.99 220.98 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11582,7 +11600,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 172.72 213.36 0)
+			(at 173.99 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11591,7 +11609,7 @@
 			)
 		)
 		(property "UST_ID" "5c70984712875079b91f8b4c"
-			(at 172.72 213.36 0)
+			(at 173.99 220.98 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11608,7 +11626,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C7")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -11623,7 +11641,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1b43c5f0-ca56-4fb9-bfd0-dfad40a243a4")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR047"
 			(at 96.52 260.35 0)
 			(effects
 				(font
@@ -11673,7 +11691,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR034")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -11761,7 +11779,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1dd5af86-424f-4ac6-8f07-28f6085ad0c8")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR038"
 			(at 95.25 185.42 0)
 			(effects
 				(font
@@ -11811,7 +11829,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR016")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -11826,7 +11844,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1fd7f49b-e399-4117-a224-fe69e86799ef")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR015"
 			(at 222.25 91.44 0)
 			(effects
 				(font
@@ -11877,7 +11895,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR039")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -11892,7 +11910,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "21b5a497-2c83-46c9-9b7b-99ac0923dfc2")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR013"
 			(at 38.1 86.36 0)
 			(effects
 				(font
@@ -11943,7 +11961,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR01")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -11958,7 +11976,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "23083038-7e92-450e-952b-72c029cd4f2b")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR052"
 			(at 44.45 278.13 0)
 			(effects
 				(font
@@ -12009,7 +12027,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR025")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -12024,7 +12042,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "26e1e59a-3454-4af8-a1a9-990f4365ebb5")
-		(property "Reference" "L1"
+		(property "Reference" "L2"
 			(at 58.42 105.41 90)
 			(effects
 				(font
@@ -12096,7 +12114,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "L1")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -12111,7 +12129,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "28a91a76-20b0-4643-b0b9-9edb8ec63376")
-		(property "Reference" "R14"
+		(property "Reference" "R12"
 			(at 193.04 147.32 90)
 			(effects
 				(font
@@ -12172,7 +12190,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R14")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -12187,7 +12205,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "294c2807-d942-4891-88fe-2fee4006fa5f")
-		(property "Reference" "R6"
+		(property "Reference" "R22"
 			(at 83.82 191.77 90)
 			(effects
 				(font
@@ -12248,7 +12266,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R6")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -12263,7 +12281,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2b6060fb-3788-455c-a2d5-d27ee4cc4c8e")
-		(property "Reference" "C9"
+		(property "Reference" "C5"
 			(at 207.01 55.88 0)
 			(effects
 				(font
@@ -12326,7 +12344,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C9")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -12334,7 +12352,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 171.45 229.87 90)
+		(at 172.72 233.68 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12342,8 +12360,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2bf77915-ac97-4cfb-ba20-0da10bed9d20")
-		(property "Reference" "#FLG02"
-			(at 169.545 229.87 0)
+		(property "Reference" "#FLG03"
+			(at 170.815 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12352,7 +12370,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 167.64 229.8699 90)
+			(at 168.91 233.6799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12361,7 +12379,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 229.87 0)
+			(at 172.72 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12370,7 +12388,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 171.45 229.87 0)
+			(at 172.72 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12379,7 +12397,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 171.45 229.87 0)
+			(at 172.72 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12393,7 +12411,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#FLG02")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -12408,7 +12426,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2df1ee8d-31e0-4db3-bbb7-77799af16aa6")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR043"
 			(at 95.25 214.63 0)
 			(effects
 				(font
@@ -12459,7 +12477,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR017")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -12474,7 +12492,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "351292ce-be5a-4e21-8ad1-746ccebfdfae")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 62.23 140.97 90)
 			(effects
 				(font
@@ -12608,7 +12626,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "U1")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -12623,7 +12641,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3884e275-8420-4914-b65f-e04f474d2b35")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR08"
 			(at 328.93 64.77 0)
 			(effects
 				(font
@@ -12672,7 +12690,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR046")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -12680,7 +12698,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 171.45 190.5 90)
+		(at 172.72 189.23 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12688,8 +12706,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39143f4a-6922-4f06-9b74-baf8563f9ea0")
-		(property "Reference" "#FLG03"
-			(at 169.545 190.5 0)
+		(property "Reference" "#FLG02"
+			(at 170.815 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12698,7 +12716,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 168.2751 190.5 90)
+			(at 169.5451 189.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12707,7 +12725,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 190.5 0)
+			(at 172.72 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12716,7 +12734,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 171.45 190.5 0)
+			(at 172.72 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12725,7 +12743,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 171.45 190.5 0)
+			(at 172.72 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12739,7 +12757,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#FLG03")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -12747,15 +12765,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 172.72 231.14 0)
+		(at 173.99 234.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "3b26bf95-90d9-4ce0-9fe5-6d2e1093724e")
-		(property "Reference" "#PWR021"
-			(at 172.72 237.49 0)
+		(property "Reference" "#PWR045"
+			(at 173.99 241.3 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12764,7 +12782,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 176.53 232.41 0)
+			(at 177.8 236.22 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12773,7 +12791,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 231.14 0)
+			(at 173.99 234.95 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12782,7 +12800,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 231.14 0)
+			(at 173.99 234.95 0)
 			(effects
 				(font
 					(size 1 1)
@@ -12791,7 +12809,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 231.14 0)
+			(at 173.99 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12805,7 +12823,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR021")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -12820,7 +12838,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b2df421-07ee-43c3-bb02-9398b4e9494f")
-		(property "Reference" "D8"
+		(property "Reference" "D6"
 			(at 328.93 166.37 0)
 			(effects
 				(font
@@ -12890,7 +12908,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "D8")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -12905,7 +12923,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c1c0a58-adb4-4cf6-b6cd-f630b40a4850")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR05"
 			(at 175.26 55.88 0)
 			(effects
 				(font
@@ -12955,7 +12973,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR027")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -12970,7 +12988,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3d1242e4-9086-49eb-9c23-5d4acc98a470")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR01"
 			(at 64.77 41.91 0)
 			(effects
 				(font
@@ -13020,7 +13038,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR08")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -13035,7 +13053,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3ed59ddd-81fc-4607-84fb-ba1248f3ade5")
-		(property "Reference" "C15"
+		(property "Reference" "C1"
 			(at 321.31 42.545 0)
 			(effects
 				(font
@@ -13098,7 +13116,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C15")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -13113,7 +13131,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3fa5fa68-259d-46b3-9177-26d255191d3e")
-		(property "Reference" "R16"
+		(property "Reference" "R5"
 			(at 207.01 81.28 90)
 			(effects
 				(font
@@ -13174,7 +13192,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R16")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -13189,7 +13207,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3ffe195c-7a3b-4146-91f8-aa72fd700e64")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR039"
 			(at 57.15 186.69 0)
 			(effects
 				(font
@@ -13239,7 +13257,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR014")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -13332,15 +13350,15 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 200.66 223.52 180)
+		(at 195.58 227.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "43f0304d-9913-4db6-8e53-88e1bf2ef064")
-		(property "Reference" "R19"
-			(at 202.692 223.52 90)
+		(property "Reference" "R28"
+			(at 193.294 226.568 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13348,7 +13366,7 @@
 			)
 		)
 		(property "Value" "4M7"
-			(at 198.882 223.52 90)
+			(at 193.04 228.092 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13356,7 +13374,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 200.66 223.52 0)
+			(at 195.58 227.33 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13365,7 +13383,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 223.52 0)
+			(at 195.58 227.33 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13374,7 +13392,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 200.66 223.52 0)
+			(at 195.58 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13383,7 +13401,7 @@
 			)
 		)
 		(property "UST_ID" "5c70984512875079b91f8983"
-			(at 200.66 223.52 0)
+			(at 195.58 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13400,7 +13418,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R19")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -13415,7 +13433,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "450fcbbd-088d-4381-9179-67d6450aeebd")
-		(property "Reference" "C18"
+		(property "Reference" "C8"
 			(at 331.47 78.74 0)
 			(effects
 				(font
@@ -13478,7 +13496,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C18")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -13486,7 +13504,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:Q_NMOS_GDS")
-		(at 218.44 227.33 90)
+		(at 213.36 231.14 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13494,8 +13512,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "49e00217-b089-4fe5-9633-8474be333730")
-		(property "Reference" "Q4"
-			(at 218.44 233.172 90)
+		(property "Reference" "Q5"
+			(at 213.36 236.982 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13503,7 +13521,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 217.17 241.046 0)
+			(at 212.09 244.856 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13512,7 +13530,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 232.41 0)
+			(at 210.82 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13521,7 +13539,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 218.44 227.33 0)
+			(at 213.36 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13530,7 +13548,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, gate/drain/source"
-			(at 218.44 227.33 0)
+			(at 213.36 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13550,7 +13568,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "Q4")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -13565,7 +13583,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4bd4d56e-1204-40f5-9e40-c56545f3d459")
-		(property "Reference" "R5"
+		(property "Reference" "R21"
 			(at 45.72 191.77 90)
 			(effects
 				(font
@@ -13626,7 +13644,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R5")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -13634,15 +13652,15 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 172.72 198.12 0)
+		(at 173.99 199.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "4c3799bc-d66c-4916-973c-5f4acaed6109")
-		(property "Reference" "R11"
-			(at 173.99 197.104 0)
+		(property "Reference" "R25"
+			(at 175.26 198.374 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -13651,7 +13669,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 173.99 199.136 0)
+			(at 175.26 200.406 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13660,7 +13678,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 198.12 0)
+			(at 173.99 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13669,7 +13687,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 198.12 0)
+			(at 173.99 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13678,7 +13696,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 172.72 198.12 0)
+			(at 173.99 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13695,7 +13713,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R11")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -13710,7 +13728,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e508f1a-84b8-4330-926f-1115b0fd71ee")
-		(property "Reference" "U4"
+		(property "Reference" "U1"
 			(at 300.99 43.434 0)
 			(effects
 				(font
@@ -13824,7 +13842,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "U4")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -13839,7 +13857,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50bc2ea1-ba77-4cf7-ad0b-7aa4e7f9cc30")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR022"
 			(at 299.72 113.03 0)
 			(effects
 				(font
@@ -13888,7 +13906,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR042")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -13896,15 +13914,15 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 177.8 223.52 0)
+		(at 187.96 227.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "5204f191-9b81-473a-81b9-0597e555c2a3")
-		(property "Reference" "R12"
-			(at 179.07 222.504 0)
+		(property "Reference" "R27"
+			(at 183.642 226.314 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -13913,7 +13931,7 @@
 			)
 		)
 		(property "Value" "2k2"
-			(at 179.07 224.536 0)
+			(at 184.15 228.346 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13922,7 +13940,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 223.52 0)
+			(at 187.96 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13931,7 +13949,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 223.52 0)
+			(at 187.96 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13940,7 +13958,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 177.8 223.52 0)
+			(at 187.96 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13957,7 +13975,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R12")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -13972,7 +13990,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "53c8cf5d-657e-4576-8744-c949b7f378a8")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR051"
 			(at 57.15 266.7 0)
 			(effects
 				(font
@@ -14022,7 +14040,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR026")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -14205,7 +14223,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "55c1c93f-3a3e-4378-9da4-085f10ddbda7")
-		(property "Reference" "Q3"
+		(property "Reference" "Q1"
 			(at 194.31 132.08 0)
 			(effects
 				(font
@@ -14271,7 +14289,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "Q3")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -14286,7 +14304,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "57927535-da65-42a1-8052-493cf31c6700")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR024"
 			(at 317.5 120.65 0)
 			(effects
 				(font
@@ -14335,7 +14353,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR044")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -14350,7 +14368,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a2eb01b-d65b-4a5b-8c00-51493a935659")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR04"
 			(at 87.63 58.42 0)
 			(effects
 				(font
@@ -14401,7 +14419,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR013")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -14416,7 +14434,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b6db401-3004-4d11-8b00-66885ec9a7b2")
-		(property "Reference" "D6"
+		(property "Reference" "D4"
 			(at 328.93 158.75 0)
 			(effects
 				(font
@@ -14486,7 +14504,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "D6")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -14574,7 +14592,7 @@
 	)
 	(symbol
 		(lib_id "MLAB_BATERY:2xBATT")
-		(at 232.41 209.55 0)
+		(at 229.87 207.01 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -14583,7 +14601,7 @@
 		(dnp no)
 		(uuid "5f349159-ae70-457c-a63c-36031f0a0970")
 		(property "Reference" "BT1"
-			(at 229.362 206.756 0)
+			(at 226.822 204.216 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14592,7 +14610,7 @@
 			)
 		)
 		(property "Value" "BATT"
-			(at 229.362 209.296 0)
+			(at 226.822 206.756 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14601,7 +14619,7 @@
 			)
 		)
 		(property "Footprint" "Mlab_Batery:BAT_BK-18650-PC4"
-			(at 232.41 208.026 90)
+			(at 229.87 205.486 90)
 			(effects
 				(font
 					(size 1 1)
@@ -14610,7 +14628,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 208.026 90)
+			(at 229.87 205.486 90)
 			(effects
 				(font
 					(size 1 1)
@@ -14619,7 +14637,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 232.41 209.55 0)
+			(at 229.87 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14628,7 +14646,7 @@
 			)
 		)
 		(property "UST_ID" "5c70984412875079b91f87e9"
-			(at 232.41 209.55 0)
+			(at 229.87 207.01 0)
 			(effects
 				(font
 					(size 1 1)
@@ -14666,7 +14684,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "635fb23e-034f-42e2-8c1f-f0849e346cd2")
-		(property "Reference" "R28"
+		(property "Reference" "R1"
 			(at 337.82 38.735 90)
 			(effects
 				(font
@@ -14727,7 +14745,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R28")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -14819,7 +14837,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6805dc8f-dc49-4506-a10b-4f22c7082acb")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR027"
 			(at 38.1 129.54 0)
 			(effects
 				(font
@@ -14870,7 +14888,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR03")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -14956,7 +14974,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "68c09a0b-6487-409c-821f-f99b5a416d16")
-		(property "Reference" "D5"
+		(property "Reference" "D3"
 			(at 328.93 154.94 0)
 			(effects
 				(font
@@ -15026,7 +15044,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "D5")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -15042,7 +15060,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69510657-ed45-44cf-a5fb-78ab7e6f22ca")
-		(property "Reference" "R3"
+		(property "Reference" "R8"
 			(at 74.93 118.1099 0)
 			(effects
 				(font
@@ -15105,7 +15123,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R3")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -15121,7 +15139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a4aaa77-f9ac-4d0e-bc9f-9535fb66d171")
-		(property "Reference" "FID3"
+		(property "Reference" "FID2"
 			(at 320.04 229.87 0)
 			(effects
 				(font
@@ -15187,7 +15205,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "FID3")
+					(reference "FID2")
 					(unit 1)
 				)
 			)
@@ -15202,7 +15220,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6b33b87f-16ec-4b39-8366-ec02c1fc88a5")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR020"
 			(at 330.2 102.87 0)
 			(effects
 				(font
@@ -15252,7 +15270,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR048")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -15260,7 +15278,7 @@
 	)
 	(symbol
 		(lib_id "Device:NetTie_2")
-		(at 247.65 220.98 0)
+		(at 245.11 220.98 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15269,7 +15287,7 @@
 		(dnp no)
 		(uuid "6c810441-fcab-4c0a-9fc9-02037419a449")
 		(property "Reference" "NT1"
-			(at 247.65 219.71 0)
+			(at 245.11 219.71 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15277,7 +15295,7 @@
 			)
 		)
 		(property "Value" "NetTie_2"
-			(at 247.65 218.44 0)
+			(at 245.11 218.44 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15286,7 +15304,7 @@
 			)
 		)
 		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
-			(at 247.65 220.98 0)
+			(at 245.11 220.98 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15295,7 +15313,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 247.65 220.98 0)
+			(at 245.11 220.98 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15304,7 +15322,7 @@
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
-			(at 247.65 220.98 0)
+			(at 245.11 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15313,7 +15331,7 @@
 			)
 		)
 		(property "UST_ID" "x"
-			(at 247.65 220.98 0)
+			(at 245.11 220.98 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15345,7 +15363,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6c9c3cb5-54a0-4ef4-bee6-79c546118762")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR09"
 			(at 217.17 67.31 0)
 			(effects
 				(font
@@ -15396,7 +15414,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR037")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -15411,7 +15429,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6e4b5d34-03c9-4df3-a155-4bb4f4559744")
-		(property "Reference" "R20"
+		(property "Reference" "R13"
 			(at 323.85 147.32 90)
 			(effects
 				(font
@@ -15472,7 +15490,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R20")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -15480,15 +15498,15 @@
 	)
 	(symbol
 		(lib_id "Battery_Management:BQ297xy")
-		(at 191.77 208.28 0)
+		(at 207.01 210.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "6e78b8ca-5967-4ac9-bf47-92296ede8a08")
-		(property "Reference" "U3"
-			(at 191.77 198.12 0)
+		(property "Reference" "U5"
+			(at 207.01 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15496,7 +15514,7 @@
 			)
 		)
 		(property "Value" "BQ29700DSER"
-			(at 191.77 200.66 0)
+			(at 207.01 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15504,7 +15522,7 @@
 			)
 		)
 		(property "Footprint" "Package_SON:WSON-6_1.5x1.5mm_P0.5mm"
-			(at 191.77 199.39 0)
+			(at 207.01 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15513,7 +15531,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/bq2970.pdf"
-			(at 185.42 203.2 0)
+			(at 200.66 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15522,7 +15540,7 @@
 			)
 		)
 		(property "Description" "Voltage and Current Protection for Single-Cell Li-Ion and Li-Polymer Batteries"
-			(at 191.77 208.28 0)
+			(at 207.01 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15548,10 +15566,13 @@
 		(pin "6"
 			(uuid "ca1e9dde-0b3f-41c2-be31-0a83fca294d1")
 		)
+		(pin "1"
+			(uuid "8473b426-6176-438f-a16f-a1b2b349595c")
+		)
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "U3")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -15651,7 +15672,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "70b000e0-2a18-438a-8e30-e5bb8e61024f")
-		(property "Reference" "R2"
+		(property "Reference" "R3"
 			(at 73.66 49.53 0)
 			(effects
 				(font
@@ -15714,7 +15735,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R2")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -15722,7 +15743,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 172.72 190.5 0)
+		(at 173.99 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15730,8 +15751,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "747241ff-1c69-4023-b22c-105b4ab2d9a0")
-		(property "Reference" "#PWR020"
-			(at 172.72 194.31 0)
+		(property "Reference" "#PWR041"
+			(at 173.99 193.04 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15740,7 +15761,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 172.72 185.42 0)
+			(at 173.99 184.15 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15748,7 +15769,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 190.5 0)
+			(at 173.99 189.23 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15757,7 +15778,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 190.5 0)
+			(at 173.99 189.23 0)
 			(effects
 				(font
 					(size 1 1)
@@ -15766,7 +15787,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 172.72 190.5 0)
+			(at 173.99 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15780,7 +15801,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR020")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -15796,7 +15817,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "759c9106-c3cb-4702-b222-8f7752824c58")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR035"
 			(at 63.5 152.4 0)
 			(effects
 				(font
@@ -15846,7 +15867,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR07")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -15861,7 +15882,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7626937c-d5c9-44ff-8e78-a55dca5228a1")
-		(property "Reference" "TH1"
+		(property "Reference" "TH2"
 			(at 219.71 90.17 90)
 			(effects
 				(font
@@ -15922,7 +15943,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "TH1")
+					(reference "TH2")
 					(unit 1)
 				)
 			)
@@ -15937,7 +15958,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7d465afc-9800-48bb-9541-f09234bdb910")
-		(property "Reference" "D4"
+		(property "Reference" "D2"
 			(at 328.93 151.13 0)
 			(effects
 				(font
@@ -16007,7 +16028,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "D4")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -16022,7 +16043,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7e3ceb92-295c-4fd0-b8a7-b902e4631759")
-		(property "Reference" "D3"
+		(property "Reference" "D1"
 			(at 328.93 147.32 0)
 			(effects
 				(font
@@ -16092,7 +16113,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "D3")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -16107,7 +16128,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8026be49-31d8-464a-ac9f-bed80844d0df")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR016"
 			(at 346.71 93.98 0)
 			(effects
 				(font
@@ -16157,7 +16178,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR052")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -16304,7 +16325,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "80c48a21-bf17-4445-a8bd-71a77ef1b8c2")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR048"
 			(at 105.41 260.35 0)
 			(effects
 				(font
@@ -16354,7 +16375,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR06")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -16451,7 +16472,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "83b32e6f-c899-4830-a984-fda17b57a0c2")
-		(property "Reference" "R23"
+		(property "Reference" "R16"
 			(at 323.85 158.75 90)
 			(effects
 				(font
@@ -16512,7 +16533,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R23")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -16527,7 +16548,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8493eb74-7250-49bf-98a0-d06da1b31dfd")
-		(property "Reference" "D10"
+		(property "Reference" "D8"
 			(at 328.93 173.99 0)
 			(effects
 				(font
@@ -16597,7 +16618,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "D10")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -16605,7 +16626,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 245.11 199.39 0)
+		(at 242.57 196.85 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16614,8 +16635,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85102126-59a1-4a2d-8c38-206f7548d4e3")
-		(property "Reference" "F1"
-			(at 242.57 198.12 0)
+		(property "Reference" "F2"
+			(at 240.03 195.58 0)
 			(effects
 				(font
 					(size 1 1)
@@ -16624,7 +16645,7 @@
 			)
 		)
 		(property "Value" "Fuse"
-			(at 242.57 200.66 0)
+			(at 240.03 198.12 0)
 			(effects
 				(font
 					(size 1 1)
@@ -16633,7 +16654,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuseholder_Littelfuse_Nano2_154x"
-			(at 246.888 199.39 90)
+			(at 244.348 196.85 90)
 			(effects
 				(font
 					(size 1 1)
@@ -16642,7 +16663,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 245.11 199.39 0)
+			(at 242.57 196.85 0)
 			(effects
 				(font
 					(size 1 1)
@@ -16651,7 +16672,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 245.11 199.39 0)
+			(at 242.57 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16660,7 +16681,7 @@
 			)
 		)
 		(property "UST_ID" "5c70984512875079b91f88d8"
-			(at 245.11 199.39 0)
+			(at 242.57 196.85 0)
 			(effects
 				(font
 					(size 1 1)
@@ -16677,7 +16698,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "F1")
+					(reference "F2")
 					(unit 1)
 				)
 			)
@@ -16692,7 +16713,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8550312d-61fc-4d00-8f8c-b921edb8d8f9")
-		(property "Reference" "R15"
+		(property "Reference" "R7"
 			(at 199.39 99.06 90)
 			(effects
 				(font
@@ -16753,7 +16774,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R15")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -16768,7 +16789,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "87914cbe-692c-490a-903c-26db901c5199")
-		(property "Reference" "D2"
+		(property "Reference" "D10"
 			(at 97.79 203.1365 90)
 			(effects
 				(font
@@ -16840,7 +16861,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "D2")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -16855,7 +16876,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "888cda17-c7e9-4d58-837e-d05ad7ca7ffc")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR012"
 			(at 205.74 81.28 0)
 			(effects
 				(font
@@ -16906,7 +16927,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR036")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -17017,7 +17038,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8cddbd44-f643-4664-befa-0acb89286079")
-		(property "Reference" "C5"
+		(property "Reference" "C10"
 			(at 163.83 90.1763 0)
 			(effects
 				(font
@@ -17080,7 +17101,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C5")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -17095,7 +17116,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8dc5cf22-6327-4f98-b33c-cac8c98989a3")
-		(property "Reference" "C1"
+		(property "Reference" "C15"
 			(at 40.64 120.65 0)
 			(effects
 				(font
@@ -17158,7 +17179,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C1")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -17173,7 +17194,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8dddcf6f-90f6-4ec3-890d-37296b75bc68")
-		(property "Reference" "R21"
+		(property "Reference" "R14"
 			(at 323.85 151.13 90)
 			(effects
 				(font
@@ -17234,7 +17255,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R21")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -17249,7 +17270,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8f34fbaf-6542-4c92-a423-e6cb75a1d534")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR019"
 			(at 346.71 104.14 0)
 			(effects
 				(font
@@ -17298,7 +17319,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR053")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -17306,15 +17327,15 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 223.52 223.52 180)
+		(at 218.44 227.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "95b4c849-fe50-4133-a547-ccc5be33bb81")
-		(property "Reference" "R18"
-			(at 225.044 223.52 90)
+		(property "Reference" "R29"
+			(at 220.98 226.568 0)
 			(effects
 				(font
 					(size 1 1)
@@ -17322,7 +17343,7 @@
 			)
 		)
 		(property "Value" "4M7"
-			(at 221.742 223.52 90)
+			(at 220.98 228.092 0)
 			(effects
 				(font
 					(size 1 1)
@@ -17330,7 +17351,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 223.52 223.52 0)
+			(at 218.44 227.33 0)
 			(effects
 				(font
 					(size 1 1)
@@ -17339,7 +17360,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 223.52 223.52 0)
+			(at 218.44 227.33 0)
 			(effects
 				(font
 					(size 1 1)
@@ -17348,7 +17369,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 223.52 223.52 0)
+			(at 218.44 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17357,7 +17378,7 @@
 			)
 		)
 		(property "UST_ID" "5c70984512875079b91f8983"
-			(at 223.52 223.52 0)
+			(at 218.44 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17374,7 +17395,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R18")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -17390,7 +17411,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a2f86d9-3dd7-436e-9396-474187f17374")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR023"
 			(at 337.82 113.03 0)
 			(effects
 				(font
@@ -17440,7 +17461,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR051")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -17456,7 +17477,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c8ffcb3-1078-4272-a9a3-ba1698da2883")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR029"
 			(at 93.98 130.81 0)
 			(effects
 				(font
@@ -17507,7 +17528,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR019")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -17522,7 +17543,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f59a088-0f1b-46d9-9c9c-cf0881901aad")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR017"
 			(at 161.29 101.6 0)
 			(effects
 				(font
@@ -17573,7 +17594,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR024")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -17588,7 +17609,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f64ea09-5977-4a32-82f3-0fc7c763ac0b")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR040"
 			(at 307.34 194.31 0)
 			(effects
 				(font
@@ -17637,7 +17658,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR043")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -17645,7 +17666,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 245.11 223.52 0)
+		(at 242.57 223.52 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17653,8 +17674,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a26153f2-503a-4c59-95e3-0c65ab28e776")
-		(property "Reference" "R9"
-			(at 243.078 223.52 90)
+		(property "Reference" "R26"
+			(at 240.538 223.52 90)
 			(effects
 				(font
 					(size 1 1)
@@ -17662,7 +17683,7 @@
 			)
 		)
 		(property "Value" "0R01 75PPM"
-			(at 241.3 223.52 90)
+			(at 238.76 223.52 90)
 			(effects
 				(font
 					(size 1 1)
@@ -17670,7 +17691,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
-			(at 245.11 223.52 0)
+			(at 242.57 223.52 0)
 			(effects
 				(font
 					(size 1 1)
@@ -17679,7 +17700,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 245.11 223.52 0)
+			(at 242.57 223.52 0)
 			(effects
 				(font
 					(size 1 1)
@@ -17688,7 +17709,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 245.11 223.52 0)
+			(at 242.57 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17697,7 +17718,7 @@
 			)
 		)
 		(property "UST_ID" "5c70984712875079b91f8abf"
-			(at 245.11 223.52 0)
+			(at 242.57 223.52 0)
 			(effects
 				(font
 					(size 1 1)
@@ -17714,7 +17735,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R9")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -17729,7 +17750,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a68fabd9-c4eb-4ec0-bf5e-ad8875ec44f0")
-		(property "Reference" "TH2"
+		(property "Reference" "TH1"
 			(at 322.58 66.04 90)
 			(effects
 				(font
@@ -17790,7 +17811,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "TH2")
+					(reference "TH1")
 					(unit 1)
 				)
 			)
@@ -17805,7 +17826,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a8c6abd3-f2bd-4e2e-a5d3-874317492a47")
-		(property "Reference" "C2"
+		(property "Reference" "C16"
 			(at 86.36 118.11 0)
 			(effects
 				(font
@@ -17868,7 +17889,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C2")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -17883,7 +17904,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a9d74648-7192-4920-b7bc-4ddbaa47e776")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR018"
 			(at 186.69 101.6 0)
 			(effects
 				(font
@@ -17934,7 +17955,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR029")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -17950,7 +17971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9dcaab1-6d3d-414f-8ffe-a42d0511aaf6")
-		(property "Reference" "R4"
+		(property "Reference" "R9"
 			(at 74.93 125.7299 0)
 			(effects
 				(font
@@ -18013,7 +18034,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R4")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -18021,15 +18042,15 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:Q_NMOS_GDS")
-		(at 205.74 227.33 270)
+		(at 200.66 231.14 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "aa0897cc-d8f9-4d97-8260-a14744578c03")
-		(property "Reference" "Q5"
-			(at 204.47 233.426 90)
+		(property "Reference" "Q4"
+			(at 199.39 237.236 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18038,7 +18059,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 204.4701 233.68 0)
+			(at 199.3901 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18048,7 +18069,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 208.28 232.41 0)
+			(at 203.2 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18057,7 +18078,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 227.33 0)
+			(at 200.66 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18066,7 +18087,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, gate/drain/source"
-			(at 205.74 227.33 0)
+			(at 200.66 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18086,7 +18107,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "Q5")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -18101,7 +18122,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "abce83d6-8693-4402-8204-2e1294711bcb")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR042"
 			(at 57.15 214.63 0)
 			(effects
 				(font
@@ -18152,7 +18173,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR015")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -18167,7 +18188,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ace55a23-98a1-4cc8-8a2b-b3f5a2299fd6")
-		(property "Reference" "R22"
+		(property "Reference" "R15"
 			(at 323.85 154.94 90)
 			(effects
 				(font
@@ -18228,7 +18249,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R22")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -18328,7 +18349,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b06582fc-9ba2-4b80-b36a-49d4fb0ae17e")
-		(property "Reference" "C13"
+		(property "Reference" "C18"
 			(at 284.48 172.72 0)
 			(effects
 				(font
@@ -18391,7 +18412,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C13")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -18406,7 +18427,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1e41a38-abfe-46d3-8e19-79783f56b16a")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR03"
 			(at 328.93 52.07 0)
 			(effects
 				(font
@@ -18455,7 +18476,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR045")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -18470,7 +18491,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b91230f2-d60b-4bcc-910f-ca610d295786")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR02"
 			(at 87.63 48.26 0)
 			(effects
 				(font
@@ -18520,7 +18541,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR012")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -18535,7 +18556,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ba54e3b2-4300-4b0b-98b6-900c7accc985")
-		(property "Reference" "D1"
+		(property "Reference" "D9"
 			(at 59.69 203.1365 90)
 			(effects
 				(font
@@ -18607,7 +18628,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "D1")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -18622,7 +18643,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bc7a4824-38c8-4607-aa9e-8cfb9b06a4ff")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR031"
 			(at 72.39 137.16 0)
 			(effects
 				(font
@@ -18673,7 +18694,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR010")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -18818,7 +18839,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 232.41 199.39 0)
+		(at 229.87 196.85 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18827,8 +18848,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bea35897-d4c3-4e76-b2c0-b00dff783e5e")
-		(property "Reference" "F2"
-			(at 229.87 198.12 0)
+		(property "Reference" "F1"
+			(at 227.33 195.58 0)
 			(effects
 				(font
 					(size 1 1)
@@ -18837,7 +18858,7 @@
 			)
 		)
 		(property "Value" "Fuse"
-			(at 229.87 200.66 0)
+			(at 227.33 198.12 0)
 			(effects
 				(font
 					(size 1 1)
@@ -18846,7 +18867,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuseholder_Littelfuse_Nano2_154x"
-			(at 234.188 199.39 90)
+			(at 231.648 196.85 90)
 			(effects
 				(font
 					(size 1 1)
@@ -18855,7 +18876,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 199.39 0)
+			(at 229.87 196.85 0)
 			(effects
 				(font
 					(size 1 1)
@@ -18864,7 +18885,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 232.41 199.39 0)
+			(at 229.87 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18873,7 +18894,7 @@
 			)
 		)
 		(property "UST_ID" "5c70984512875079b91f88d8"
-			(at 232.41 199.39 0)
+			(at 229.87 196.85 0)
 			(effects
 				(font
 					(size 1 1)
@@ -18890,7 +18911,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "F2")
+					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -18905,7 +18926,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf550390-24f3-4628-9458-5908d1c46b11")
-		(property "Reference" "L2"
+		(property "Reference" "L1"
 			(at 209.55 50.8 90)
 			(effects
 				(font
@@ -18977,7 +18998,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "L2")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -18992,7 +19013,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf9e91bb-2340-4440-99d1-6f9c10c2482d")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR014"
 			(at 328.93 87.63 0)
 			(effects
 				(font
@@ -19040,7 +19061,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR047")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -19055,7 +19076,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bfbffa0b-6081-48fe-bdf3-f27bd6dd65bd")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR010"
 			(at 201.93 72.39 0)
 			(effects
 				(font
@@ -19105,7 +19126,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR033")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -19120,7 +19141,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c003a4d5-ecaa-414c-843a-94f7332ba6ef")
-		(property "Reference" "C12"
+		(property "Reference" "C9"
 			(at 224.79 80.0163 0)
 			(effects
 				(font
@@ -19183,7 +19204,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C12")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -19198,7 +19219,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c023bdae-974e-4f36-8925-ea635382525f")
-		(property "Reference" "C11"
+		(property "Reference" "C6"
 			(at 219.71 57.15 0)
 			(effects
 				(font
@@ -19261,7 +19282,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C11")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -19277,7 +19298,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0857252-d171-4d99-90f2-9f5b5fd6981d")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR026"
 			(at 93.98 119.38 0)
 			(effects
 				(font
@@ -19327,7 +19348,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR018")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -19342,7 +19363,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c34c5862-cd0a-4355-a767-c36c40f3fe33")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR037"
 			(at 284.48 185.42 0)
 			(effects
 				(font
@@ -19391,7 +19412,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR041")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -19406,7 +19427,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c39fd43e-96b5-4555-9bed-4342540eba10")
-		(property "Reference" "C16"
+		(property "Reference" "C2"
 			(at 331.47 42.545 0)
 			(effects
 				(font
@@ -19469,7 +19490,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C16")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -19484,7 +19505,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c470cde5-1184-4b38-b3dd-5096f14cbe27")
-		(property "Reference" "R29"
+		(property "Reference" "R4"
 			(at 337.82 48.895 90)
 			(effects
 				(font
@@ -19545,7 +19566,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R29")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -19560,7 +19581,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c77dba15-3c51-48a8-ba63-c8a52f1a91f3")
-		(property "Reference" "C10"
+		(property "Reference" "C7"
 			(at 208.28 71.1263 0)
 			(effects
 				(font
@@ -19623,7 +19644,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C10")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -19638,7 +19659,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "caf13728-2ddd-4e0b-8239-f16aba511640")
-		(property "Reference" "D9"
+		(property "Reference" "D7"
 			(at 328.93 170.18 0)
 			(effects
 				(font
@@ -19708,7 +19729,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "D9")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -19723,7 +19744,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ce323873-e015-47d8-8c51-3500943212e0")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR033"
 			(at 336.55 149.86 0)
 			(effects
 				(font
@@ -19773,7 +19794,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR050")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -19788,7 +19809,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cf420e0f-2f9e-4f61-88a7-2fa664eacda4")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR044"
 			(at 330.2 228.6 0)
 			(effects
 				(font
@@ -19839,7 +19860,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR049")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -19854,7 +19875,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d0319778-2643-4f9c-9aaf-a253e8ab9939")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR050"
 			(at 46.99 266.7 0)
 			(effects
 				(font
@@ -19904,7 +19925,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR022")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -19920,7 +19941,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0a38803-a535-45fd-8d2b-7aec32bd6bb8")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR025"
 			(at 38.1 119.38 0)
 			(effects
 				(font
@@ -19970,7 +19991,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR02")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -19985,7 +20006,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d27d3834-4c41-43f7-90f6-59d152e9a420")
-		(property "Reference" "U5"
+		(property "Reference" "U4"
 			(at 303.53 142.24 0)
 			(effects
 				(font
@@ -20082,7 +20103,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "U5")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -20176,7 +20197,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d41cda0e-dd9e-47d8-8ed0-bd0dd075d18b")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR06"
 			(at 68.58 59.69 0)
 			(effects
 				(font
@@ -20226,7 +20247,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR09")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -20242,7 +20263,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d7ad69f0-e631-45ef-8428-ef9f2fd70051")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR046"
 			(at 45.72 242.57 0)
 			(effects
 				(font
@@ -20293,7 +20314,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR04")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -20309,7 +20330,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d927bd82-5241-4fc3-81a2-85b4a97fa566")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR07"
 			(at 222.25 57.15 0)
 			(effects
 				(font
@@ -20359,7 +20380,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR038")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -20374,7 +20395,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e03ddf13-7569-43e6-a19e-624a1535c927")
-		(property "Reference" "R17"
+		(property "Reference" "R6"
 			(at 213.36 83.82 90)
 			(effects
 				(font
@@ -20435,7 +20456,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R17")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -20450,7 +20471,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e1cd4d78-c23b-47e5-a531-d667d6935d7b")
-		(property "Reference" "R13"
+		(property "Reference" "R11"
 			(at 193.04 139.7 90)
 			(effects
 				(font
@@ -20511,7 +20532,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R13")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -20527,7 +20548,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e7fd9b92-8a96-41f6-ac9c-765ce55abca0")
-		(property "Reference" "Q1"
+		(property "Reference" "Q2"
 			(at 59.69 190.5 0)
 			(effects
 				(font
@@ -20620,7 +20641,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "Q1")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -20635,7 +20656,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e956cf92-5375-47db-8a7a-bcf0e103efcc")
-		(property "Reference" "C6"
+		(property "Reference" "C11"
 			(at 172.72 90.1763 0)
 			(effects
 				(font
@@ -20698,7 +20719,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "C6")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -20778,7 +20799,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ee697652-6848-4395-b786-41b563f72f0c")
-		(property "Reference" "R7"
+		(property "Reference" "R23"
 			(at 55.245 198.12 90)
 			(effects
 				(font
@@ -20839,7 +20860,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R7")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -20854,7 +20875,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ee9462dd-b8cf-492c-8dd1-9d464e35ea5d")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR034"
 			(at 55.88 154.94 0)
 			(effects
 				(font
@@ -20906,7 +20927,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR05")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -20921,7 +20942,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef487696-52a3-4d82-a688-b73af7a59592")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR032"
 			(at 284.48 147.32 0)
 			(effects
 				(font
@@ -20971,7 +20992,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR040")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -20986,7 +21007,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f192dfe0-4d76-4cc8-987d-3b17eda76ab2")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR021"
 			(at 194.31 110.49 0)
 			(effects
 				(font
@@ -21037,7 +21058,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "#PWR032")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -21052,7 +21073,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f34b43e5-1674-4f3f-b5da-d1d7f472971f")
-		(property "Reference" "D7"
+		(property "Reference" "D5"
 			(at 328.93 162.56 0)
 			(effects
 				(font
@@ -21122,7 +21143,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "D7")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -21137,7 +21158,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f5fd3f61-b136-49c0-a8f6-272e29f08caa")
-		(property "Reference" "R26"
+		(property "Reference" "R19"
 			(at 323.85 170.18 90)
 			(effects
 				(font
@@ -21198,7 +21219,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "R26")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -21206,7 +21227,7 @@
 	)
 	(symbol
 		(lib_id "Device:NetTie_2")
-		(at 247.65 226.06 0)
+		(at 245.11 226.06 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21215,7 +21236,7 @@
 		(dnp no)
 		(uuid "f90c2bfa-75bd-43d3-af74-8d0890b69da9")
 		(property "Reference" "NT2"
-			(at 247.65 224.79 0)
+			(at 245.11 224.79 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21223,7 +21244,7 @@
 			)
 		)
 		(property "Value" "NetTie_2"
-			(at 247.65 223.52 0)
+			(at 245.11 223.52 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21232,7 +21253,7 @@
 			)
 		)
 		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
-			(at 247.65 226.06 0)
+			(at 245.11 226.06 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21241,7 +21262,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 247.65 226.06 0)
+			(at 245.11 226.06 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21250,7 +21271,7 @@
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
-			(at 247.65 226.06 0)
+			(at 245.11 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21259,7 +21280,7 @@
 			)
 		)
 		(property "UST_ID" "x"
-			(at 247.65 226.06 0)
+			(at 245.11 226.06 0)
 			(effects
 				(font
 					(size 1 1)
@@ -21292,7 +21313,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9124c1a-e7e8-4204-a395-d5199d489c50")
-		(property "Reference" "FID2"
+		(property "Reference" "FID3"
 			(at 306.07 234.95 0)
 			(effects
 				(font
@@ -21358,7 +21379,7 @@
 		(instances
 			(project "LION1CELL02"
 				(path "/949a5bba-1f1f-4325-9d02-2c6814a96048"
-					(reference "FID2")
+					(reference "FID3")
 					(unit 1)
 				)
 			)
