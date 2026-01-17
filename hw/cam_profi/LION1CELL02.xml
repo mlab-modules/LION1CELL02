@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/LION1CELL02.kicad_sch</source>
-    <date>2026-01-17T16:40:01+0000</date>
+    <date>2026-01-17T16:58:49+0000</date>
     <tool>Eeschema 9.0.6+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1879,14 +1879,14 @@ NVDC Power Path Management</field>
         <fp>WSON*1.5x1.5mm*P0.5mm*</fp>
       </footprints>
       <fields>
-        <field name="Reference">U3</field>
+        <field name="Reference">U5</field>
         <field name="Value">BQ29700DSER</field>
         <field name="Footprint">Package_SON:WSON-6_1.5x1.5mm_P0.5mm</field>
         <field name="Datasheet">http://www.ti.com/lit/ds/symlink/bq2970.pdf</field>
         <field name="Description">Voltage and Current Protection for Single-Cell Li-Ion and Li-Polymer Batteries</field>
       </fields>
       <pins>
-        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="1" name="NC" type="input"/>
         <pin num="2" name="Cout" type="output"/>
         <pin num="3" name="Dout" type="output"/>
         <pin num="4" name="VSS" type="power_in"/>
@@ -2427,7 +2427,6 @@ NVDC Power Path Management</field>
       <node ref="BT1" pin="2-" pinfunction="-" pintype="passive"/>
       <node ref="NT1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="R26" pin="1" pintype="passive"/>
-      <node ref="U5" pin="4" pinfunction="VSS" pintype="power_in"/>
     </net>
     <net code="5" name="/3v3i_FB" class="Default">
       <node ref="R8" pin="2" pintype="passive"/>
@@ -2523,7 +2522,6 @@ NVDC Power Path Management</field>
       <node ref="C16" pin="2" pintype="passive"/>
       <node ref="C17" pin="2" pintype="passive"/>
       <node ref="C18" pin="2" pintype="passive"/>
-      <node ref="C19" pin="2" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C4" pin="2" pintype="passive"/>
@@ -2656,16 +2654,18 @@ NVDC Power Path Management</field>
     </net>
     <net code="47" name="Net-(Q4-G)" class="Default">
       <node ref="Q4" pin="1" pinfunction="G" pintype="input"/>
-      <node ref="U5" pin="3" pinfunction="Dout" pintype="output"/>
+      <node ref="U5" pin="2" pinfunction="Cout" pintype="output"/>
     </net>
     <net code="48" name="Net-(Q5-G)" class="Default">
       <node ref="Q5" pin="1" pinfunction="G" pintype="input"/>
-      <node ref="U5" pin="2" pinfunction="Cout" pintype="output"/>
+      <node ref="U5" pin="3" pinfunction="Dout" pintype="output"/>
     </net>
     <net code="49" name="Net-(Q5-S)" class="Default">
+      <node ref="C19" pin="2" pintype="passive"/>
       <node ref="NT2" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="Q5" pin="3" pinfunction="S" pintype="passive"/>
       <node ref="R26" pin="2" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="VSS" pintype="power_in"/>
     </net>
     <net code="50" name="Net-(R6-Pad2)" class="Default">
       <node ref="R6" pin="2" pintype="passive"/>
