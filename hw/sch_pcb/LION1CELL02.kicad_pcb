@@ -2316,7 +2316,7 @@
 	(footprint "Fiducial:Fiducial_1mm_Mask2mm"
 		(layer "F.Cu")
 		(uuid "28c5b89a-333c-4814-b3f4-12d1e5e12e24")
-		(at 153.416 91.821)
+		(at 162.814 90.805)
 		(descr "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
 		(property "Reference" "FID4"
@@ -6087,7 +6087,7 @@
 	(footprint "Mlab_IO:Texas_S-WQFN-HR-18"
 		(layer "F.Cu")
 		(uuid "6df36f31-4718-42d2-b0c5-a39b5a055a43")
-		(at 142.19026 121.66978)
+		(at 136.574 128.512)
 		(descr "20-Pin Plastic Quad Flatpack No-Lead Package, Body 3.0x3.0x0.8mm, Texas Instruments (http://www.ti.com/lit/ds/symlink/tps22993.pdf)")
 		(tags "QFN 0.4")
 		(property "Reference" "U2"
@@ -7814,7 +7814,7 @@
 	(footprint "Mlab_IO:TSSOP-14_4.4x5mm_Pitch0.65mm"
 		(layer "F.Cu")
 		(uuid "7ba2d180-6387-44b8-b15f-a7cbe635721d")
-		(at 122.14026 120.67978)
+		(at 110.744 121.412)
 		(descr "14-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] (see Microchip Packaging Specification 00000049BS.pdf)")
 		(tags "SSOP 0.65")
 		(property "Reference" "U1"
@@ -8158,9 +8158,9 @@
 	(footprint "Mlab_CON:USBC GCT_USB4105-GF-A"
 		(layer "F.Cu")
 		(uuid "7e94d3cb-19a9-41a9-a562-f16fedd31ff2")
-		(at 101.24026 120.08978)
+		(at 180.975 66.294 -90)
 		(property "Reference" "J1"
-			(at -1.925 -6.335 0)
+			(at -1.925 -6.335 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0048baae-11dd-4df6-b3e5-f32b5296d884")
@@ -8173,7 +8173,7 @@
 			)
 		)
 		(property "Value" "USBC_USB4105-GF-A"
-			(at 0.0625 3.735 0)
+			(at 0.0625 3.735 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "704b0f8b-2741-47fa-bc39-71db20ba30be")
@@ -8185,7 +8185,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f68b1690-b242-430c-a23f-976363597dad")
@@ -8197,7 +8197,7 @@
 			)
 		)
 		(property "Description" "USB 2.0-only Type-C Receptacle connector"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "07fc98f4-145a-4aae-abf5-fb28eecfecb9")
@@ -8209,7 +8209,7 @@
 			)
 		)
 		(property "MFPN" "USB4105-GF-A"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8222,7 +8222,7 @@
 			)
 		)
 		(property "UST_ID" "5fa0f94612875025b397795e"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8235,7 +8235,7 @@
 			)
 		)
 		(property "MPN" "USB4105-GF-A"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8253,26 +8253,6 @@
 		(sheetfile "LION1CELL02.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -4.79 -2.65)
-			(end -4.79 -1.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "64e34707-35d6-450b-9fc3-d42e1583a4a7")
-		)
-		(fp_line
-			(start -4.79 1.32)
-			(end -4.79 2.6)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "0fefd7ef-ef6b-4101-b030-5770e3266886")
-		)
-		(fp_line
 			(start -4.79 2.6)
 			(end 4.79 2.6)
 			(stroke
@@ -8281,16 +8261,6 @@
 			)
 			(layer "F.SilkS")
 			(uuid "b1b3ec2e-ab81-48d4-94fe-977d72e823b2")
-		)
-		(fp_line
-			(start 4.79 -2.65)
-			(end 4.79 -1.4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "fc3c551b-9e91-4141-9dc5-35254ce2b1d4")
 		)
 		(fp_line
 			(start 4.79 2.6)
@@ -8303,14 +8273,34 @@
 			(uuid "131bd121-9f68-4744-a557-2c798b5e5247")
 		)
 		(fp_line
-			(start -5.1 -5.58)
-			(end -5.1 2.85)
+			(start -4.79 1.32)
+			(end -4.79 2.6)
 			(stroke
-				(width 0.05)
+				(width 0.2)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "bfbd6230-4466-40ba-834a-f3b298da852d")
+			(layer "F.SilkS")
+			(uuid "0fefd7ef-ef6b-4101-b030-5770e3266886")
+		)
+		(fp_line
+			(start -4.79 -2.65)
+			(end -4.79 -1.4)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "64e34707-35d6-450b-9fc3-d42e1583a4a7")
+		)
+		(fp_line
+			(start 4.79 -2.65)
+			(end 4.79 -1.4)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fc3c551b-9e91-4141-9dc5-35254ce2b1d4")
 		)
 		(fp_line
 			(start -5.1 2.85)
@@ -8323,16 +8313,6 @@
 			(uuid "12337d51-953b-4418-a350-860b461f43d5")
 		)
 		(fp_line
-			(start 5.1 -5.58)
-			(end -5.1 -5.58)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "bee1350a-6d6c-457a-a333-474a146c459a")
-		)
-		(fp_line
 			(start 5.1 2.85)
 			(end 5.1 -5.58)
 			(stroke
@@ -8343,14 +8323,24 @@
 			(uuid "b5f9cd53-a1b1-4f90-8d5e-217d9ac331de")
 		)
 		(fp_line
-			(start -4.79 -4.93)
-			(end 4.79 -4.93)
+			(start -5.1 -5.58)
+			(end -5.1 2.85)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "8db06bcb-154a-4c65-8c2e-bac8c31462a8")
+			(layer "F.CrtYd")
+			(uuid "bfbd6230-4466-40ba-834a-f3b298da852d")
+		)
+		(fp_line
+			(start 5.1 -5.58)
+			(end -5.1 -5.58)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "bee1350a-6d6c-457a-a333-474a146c459a")
 		)
 		(fp_line
 			(start -4.79 2.6)
@@ -8363,16 +8353,6 @@
 			(uuid "b91cb6b2-c856-436b-9e56-fca674aa2570")
 		)
 		(fp_line
-			(start 4.79 -4.93)
-			(end 4.79 2.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "87db8712-7fb2-489d-bb19-dae5922d82d7")
-		)
-		(fp_line
 			(start 4.79 2.6)
 			(end -4.79 2.6)
 			(stroke
@@ -8382,8 +8362,28 @@
 			(layer "F.Fab")
 			(uuid "a246125d-e772-42e8-86b3-886f3a202f31")
 		)
+		(fp_line
+			(start -4.79 -4.93)
+			(end 4.79 -4.93)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8db06bcb-154a-4c65-8c2e-bac8c31462a8")
+		)
+		(fp_line
+			(start 4.79 -4.93)
+			(end 4.79 2.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "87db8712-7fb2-489d-bb19-dae5922d82d7")
+		)
 		(pad "" np_thru_hole circle
-			(at -2.89 -3.68)
+			(at -2.89 -3.68 270)
 			(size 0.65 0.65)
 			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
@@ -8392,7 +8392,7 @@
 			(uuid "f8cb7c74-4a1b-4ae9-916c-fc6a9947bdfd")
 		)
 		(pad "" np_thru_hole circle
-			(at 2.89 -3.68)
+			(at 2.89 -3.68 270)
 			(size 0.65 0.65)
 			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
@@ -8400,7 +8400,7 @@
 			(uuid "f5e66966-9940-4b02-b83b-fc2962285df0")
 		)
 		(pad "A1/B12" smd rect
-			(at -3.2 -4.755)
+			(at -3.2 -4.755 270)
 			(size 0.6 1.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 6 "GND")
@@ -8409,7 +8409,7 @@
 			(uuid "e951cb79-005b-4607-a93a-ca913bcf21c4")
 		)
 		(pad "A4/B9" smd rect
-			(at -2.4 -4.755)
+			(at -2.4 -4.755 270)
 			(size 0.6 1.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 7 "VBUS")
@@ -8418,7 +8418,7 @@
 			(uuid "4d143bec-e2f0-4448-92a7-47eeb9c36699")
 		)
 		(pad "A5" smd rect
-			(at -1.25 -4.755)
+			(at -1.25 -4.755 270)
 			(size 0.3 1.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "Net-(J1-CC1)")
@@ -8427,7 +8427,7 @@
 			(uuid "45c8d0ed-54bd-4a5c-8410-e4c5eb06b447")
 		)
 		(pad "A6" smd rect
-			(at -0.25 -4.755)
+			(at -0.25 -4.755 270)
 			(size 0.3 1.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 33 "unconnected-(J1-D+-PadA6)")
@@ -8436,7 +8436,7 @@
 			(uuid "4476ddb5-57bc-443e-82be-a4f88eac3141")
 		)
 		(pad "A7" smd rect
-			(at 0.25 -4.755)
+			(at 0.25 -4.755 270)
 			(size 0.3 1.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 31 "unconnected-(J1-D--PadA7)")
@@ -8445,7 +8445,7 @@
 			(uuid "2d9a05dc-ea0e-4a46-b9cd-e3fbc695f980")
 		)
 		(pad "A8" smd rect
-			(at 1.25 -4.755)
+			(at 1.25 -4.755 270)
 			(size 0.3 1.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 37 "unconnected-(J1-SBU1-PadA8)")
@@ -8454,7 +8454,7 @@
 			(uuid "6f8dd3a3-80b9-49c2-83c3-397ef5d9c198")
 		)
 		(pad "B1/A12" smd rect
-			(at 3.2 -4.755)
+			(at 3.2 -4.755 270)
 			(size 0.6 1.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 6 "GND")
@@ -8463,7 +8463,7 @@
 			(uuid "2f2815f0-457b-4c4a-b2b6-a340ea480a58")
 		)
 		(pad "B4/A9" smd rect
-			(at 2.4 -4.755)
+			(at 2.4 -4.755 270)
 			(size 0.6 1.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 7 "VBUS")
@@ -8472,7 +8472,7 @@
 			(uuid "060ac9de-3671-42b0-ba96-288a9ffc8367")
 		)
 		(pad "B5" smd rect
-			(at 1.75 -4.755)
+			(at 1.75 -4.755 270)
 			(size 0.3 1.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 35 "Net-(J1-CC2)")
@@ -8481,7 +8481,7 @@
 			(uuid "4fa85270-4b1a-4588-9a4b-138aeba59b09")
 		)
 		(pad "B6" smd rect
-			(at 0.75 -4.755)
+			(at 0.75 -4.755 270)
 			(size 0.3 1.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 36 "unconnected-(J1-D+-PadB6)")
@@ -8490,7 +8490,7 @@
 			(uuid "50b53af4-9006-48fe-b16b-6fbc090b2cd7")
 		)
 		(pad "B7" smd rect
-			(at -0.75 -4.755)
+			(at -0.75 -4.755 270)
 			(size 0.3 1.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 32 "unconnected-(J1-D--PadB7)")
@@ -8499,7 +8499,7 @@
 			(uuid "3f395809-9198-49c6-a9d0-8bba1eb3db90")
 		)
 		(pad "B8" smd rect
-			(at -1.75 -4.755)
+			(at -1.75 -4.755 270)
 			(size 0.3 1.15)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 30 "unconnected-(J1-SBU2-PadB8)")
@@ -8508,7 +8508,7 @@
 			(uuid "0f4018d1-d291-499c-861c-f60d74f0ebb6")
 		)
 		(pad "G1" thru_hole oval
-			(at -4.32 0)
+			(at -4.32 0 270)
 			(size 1 2)
 			(drill oval 0.6 1.4)
 			(layers "*.Cu" "*.Mask")
@@ -8519,7 +8519,7 @@
 			(uuid "a21bfcb8-29c5-4a82-86e3-e21a511f5b6d")
 		)
 		(pad "G2" thru_hole oval
-			(at 4.32 0)
+			(at 4.32 0 270)
 			(size 1 2)
 			(drill oval 0.6 1.4)
 			(layers "*.Cu" "*.Mask")
@@ -8530,7 +8530,7 @@
 			(uuid "5d1127bc-1abb-4c22-9c58-8e1e90c9f9b6")
 		)
 		(pad "G3" thru_hole oval
-			(at -4.32 -4.18)
+			(at -4.32 -4.18 270)
 			(size 1.05 2.1)
 			(drill oval 0.6 1.7)
 			(layers "*.Cu" "*.Mask")
@@ -8546,7 +8546,7 @@
 			(uuid "e8c8bba4-7931-48c4-81c6-e6526931c32e")
 		)
 		(pad "G4" thru_hole oval
-			(at 4.32 -4.18)
+			(at 4.32 -4.18 270)
 			(size 1.05 2.1)
 			(drill oval 0.6 1.7)
 			(layers "*.Cu" "*.Mask")
@@ -12616,7 +12616,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "c29cf59e-e731-47de-8042-7947d6fa79e6")
-		(at 109.16026 116.27978)
+		(at 100.584 118.364)
 		(descr "Through hole straight pin header, 2x03, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x03 2.54mm double row")
 		(property "Reference" "J2"
@@ -16460,7 +16460,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "f151274b-65c4-4c56-9e68-8ce22080a2a1")
-		(at 115.316 127.635 -90)
+		(at 105.918 129.286 -90)
 		(descr "Through hole angled pin header, 1x04, 2.54mm pitch, 6mm pin length, single row")
 		(tags "Through hole angled pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J3"
