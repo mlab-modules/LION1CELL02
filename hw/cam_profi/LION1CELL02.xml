@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/LION1CELL02.kicad_sch</source>
-    <date>2026-01-25T21:25:42+0000</date>
+    <date>2026-01-25T22:11:27+0000</date>
     <tool>Eeschema 9.0.6+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1686,7 +1686,7 @@
       <tstamps>5204f191-9b81-473a-81b9-0597e555c2a3</tstamps>
     </comp>
     <comp ref="R28">
-      <value>10k</value>
+      <value>1k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor, small symbol</description>
@@ -1704,7 +1704,7 @@
       <tstamps>4236e24f-8c53-4872-8777-2171bb5843b3</tstamps>
     </comp>
     <comp ref="R29">
-      <value>10k</value>
+      <value>1k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor, small symbol</description>
