@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/LION1CELL02.kicad_sch</source>
-    <date>2026-01-17T16:58:49+0000</date>
+    <date>2026-01-18T19:41:04+0000</date>
     <tool>Eeschema 9.0.6+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1099,11 +1099,12 @@
       <tstamps>0e43a2f6-02ba-4e62-a4a3-2026dfbe1a0b</tstamps>
     </comp>
     <comp ref="Q4">
-      <value>~</value>
+      <value>SI2302A-TP</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-3</footprint>
       <datasheet>~</datasheet>
       <description>N-MOSFET transistor, gate/drain/source</description>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-3</field>
         <field name="Datasheet">~</field>
         <field name="Description">N-MOSFET transistor, gate/drain/source</field>
       </fields>
@@ -1115,11 +1116,12 @@
       <tstamps>aa0897cc-d8f9-4d97-8260-a14744578c03</tstamps>
     </comp>
     <comp ref="Q5">
-      <value>~</value>
+      <value>SI2302A-TP</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-3</footprint>
       <datasheet>~</datasheet>
       <description>N-MOSFET transistor, gate/drain/source</description>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-3</field>
         <field name="Datasheet">~</field>
         <field name="Description">N-MOSFET transistor, gate/drain/source</field>
       </fields>
@@ -1612,10 +1614,11 @@
     </comp>
     <comp ref="R25">
       <value>330</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor, small symbol</description>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor, small symbol</field>
       </fields>
@@ -1649,10 +1652,11 @@
     </comp>
     <comp ref="R27">
       <value>2k2</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
       <datasheet>~</datasheet>
       <description>Resistor, small symbol</description>
       <fields>
-        <field name="Footprint"/>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
         <field name="Datasheet">~</field>
         <field name="Description">Resistor, small symbol</field>
       </fields>
