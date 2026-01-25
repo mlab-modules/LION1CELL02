@@ -34,14 +34,14 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "FID1","Fiducial","Fiducial_1mm_Mask2mm",137.7950,-92.5830,0.0000,top
 "FID2","Fiducial","Fiducial_1mm_Mask2mm",144.3990,-92.5830,0.0000,top
 "FID3","Fiducial","Fiducial_1mm_Mask2mm",148.4630,-92.4560,0.0000,top
-"FID4","Fiducial","Fiducial_1mm_Mask2mm",153.4160,-91.8210,0.0000,top
+"FID4","Fiducial","Fiducial_1mm_Mask2mm",162.8140,-90.8050,0.0000,top
 "H1","M3","MountingHole_3mm",88.3920,-40.8940,0.0000,top
 "H2","M3","MountingHole_3mm",182.6260,-88.1380,0.0000,top
 "H3","M3","MountingHole_3mm",88.7730,-88.6460,0.0000,top
 "H4","M3","MountingHole_3mm",183.1340,-40.6400,0.0000,top
-"J1","USBC_USB4105-GF-A","USBC GCT_USB4105-GF-A",101.2403,-120.0898,0.0000,top
-"J2","HEADER_2x03","PinHeader_2x03_P2.54mm_Vertical",109.1603,-116.2798,0.0000,top
-"J3","HEADER_1x04","PinHeader_1x04_P2.54mm_Horizontal",115.3160,-127.6350,-90.0000,top
+"J1","USBC_USB4105-GF-A","USBC GCT_USB4105-GF-A",180.9750,-66.2940,-90.0000,top
+"J2","HEADER_2x03","PinHeader_2x03_P2.54mm_Vertical",100.5840,-118.3640,0.0000,top
+"J3","HEADER_1x04","PinHeader_1x04_P2.54mm_Horizontal",105.9180,-129.2860,-90.0000,top
 "L1","1uH - DFE252012P-1R0M=P2","L_1008_2520Metric",162.5503,-98.1598,0.0000,top
 "L2","1uH - DFE252012P-1R0M=P2","L_1008_2520Metric",162.5503,-101.9098,0.0000,top
 "Q1","BSS83P","SOT-23",162.5303,-106.0098,0.0000,top
@@ -81,8 +81,8 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "SW1","SKRTLAE010","SKRT",143.0020,-113.8460,0.0000,top
 "TH1","10k NTC","R_0805_2012Metric",115.4603,-109.5598,0.0000,top
 "TH2","10k NTC","R_0805_2012Metric",115.4603,-112.5098,0.0000,top
-"U1","BQ34Z100","TSSOP-14_4.4x5mm_Pitch0.65mm",122.1403,-120.6798,0.0000,top
-"U2","BQ25628E","Texas_S-WQFN-HR-18",142.1903,-121.6698,0.0000,top
+"U1","BQ34Z100","TSSOP-14_4.4x5mm_Pitch0.65mm",110.7440,-121.4120,0.0000,top
+"U2","BQ25628E","Texas_S-WQFN-HR-18",136.5740,-128.5120,0.0000,top
 "U3","TPS631000DRLR","SOT-583-8",160.7303,-122.1148,0.0000,top
 "U4","SN74HC164P","TSSOP-14_4.4x5mm_P0.65mm",163.2603,-111.9348,0.0000,top
 "U5","BQ29700DSER","WSON-6_1.5x1.5mm_P0.5mm",164.3153,-121.8548,0.0000,top
