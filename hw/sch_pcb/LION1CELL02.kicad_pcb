@@ -158,11 +158,13 @@
 	(net 68 "/CH_PG")
 	(net 69 "Net-(U5-V-)")
 	(net 70 "Net-(U1-P6{slash}TS)")
-	(net 71 "unconnected-(U1-P5{slash}HDQ-Pad12)")
+	(net 71 "/ALERT")
 	(net 72 "/P2")
 	(net 73 "/P1")
 	(net 74 "unconnected-(U2-~{INT}-Pad11)")
 	(net 75 "unconnected-(U5-NC-Pad1)")
+	(net 76 "Net-(U5-Cout)")
+	(net 77 "Net-(U5-Dout)")
 	(footprint "Package_TO_SOT_SMD:SOT-23-3"
 		(layer "F.Cu")
 		(uuid "0419c33c-a791-4681-95cc-c488835f0e5a")
@@ -3810,7 +3812,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-583-8"
 		(layer "F.Cu")
 		(uuid "3ead6a2d-1a6e-4289-b287-e341070d7cee")
-		(at 160.73026 122.11478)
+		(at 154.432 126.111)
 		(descr "https://www.ti.com/lit/ds/symlink/tps62933.pdf")
 		(tags "SOT-583-8")
 		(property "Reference" "U3"
@@ -4321,6 +4323,147 @@
 			)
 		)
 	)
+	(footprint "Resistor_SMD:R_0805_2012Metric"
+		(layer "F.Cu")
+		(uuid "47b05393-fdcd-4fd4-b3a4-4a3bc8e831fe")
+		(at 174.3475 109.474)
+		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(tags "resistor")
+		(property "Reference" "R28"
+			(at 0 -1.65 0)
+			(layer "F.SilkS")
+			(uuid "d1ddde47-408e-44b4-82fd-4f21e67ac577")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 1.65 0)
+			(layer "F.Fab")
+			(uuid "5cc9a0de-991e-429e-ad4a-e17c68186c4a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4e10a23e-c94d-4962-8857-f57ce92eb803")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2d107e5-dd75-4d8c-a356-02221f7245ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/4236e24f-8c53-4872-8777-2171bb5843b3")
+		(sheetname "/")
+		(sheetfile "LION1CELL02.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.227064 -0.735)
+			(end 0.227064 -0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "99ce572e-d32a-4b40-94e3-8dcc79525f0a")
+		)
+		(fp_line
+			(start -0.227064 0.735)
+			(end 0.227064 0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "094b5fca-db97-4de2-8758-8881f4ce258f")
+		)
+		(fp_rect
+			(start -1.68 -0.95)
+			(end 1.68 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "305e94a8-1381-46ed-b52e-d6263ad350c2")
+		)
+		(fp_rect
+			(start -1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "faa28f36-0553-438e-a448-b657c16a83bd")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "06783e26-ebee-462b-a16b-5180dd3f954b")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.9125 0)
+			(size 1.025 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.243902)
+			(net 76 "Net-(U5-Cout)")
+			(pintype "passive")
+			(uuid "2c492315-7b7b-4c15-b917-f6cf974f45d3")
+		)
+		(pad "2" smd roundrect
+			(at 0.9125 0)
+			(size 1.025 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.243902)
+			(net 50 "Net-(Q4-G)")
+			(pintype "passive")
+			(uuid "770a58d4-ad52-4fd3-ab42-7ca1ae994d9a")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_2512_6332Metric"
 		(layer "F.Cu")
 		(uuid "4f207698-8c87-40fb-af64-7ea92eae53d8")
@@ -4492,7 +4635,7 @@
 				)
 			)
 		)
-		(property "Value" "SI2302A-TP"
+		(property "Value" "AO3400A"
 			(at 0 2.4 0)
 			(layer "F.Fab")
 			(uuid "43960bc7-6303-4d75-9677-696368a2dfc7")
@@ -6625,7 +6768,7 @@
 				)
 			)
 		)
-		(property "Value" "SI2302A-TP"
+		(property "Value" "AO3400A"
 			(at 0 2.4 0)
 			(layer "F.Fab")
 			(uuid "1277546b-9b8d-4518-845a-8f7bdd8c7118")
@@ -8119,9 +8262,9 @@
 			(at 2.95 -0.65)
 			(size 1.45 0.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 71 "unconnected-(U1-P5{slash}HDQ-Pad12)")
+			(net 71 "/ALERT")
 			(pinfunction "P5/HDQ")
-			(pintype "unspecified+no_connect")
+			(pintype "unspecified")
 			(uuid "2532a7ef-5c01-41fa-953c-f00b0361c457")
 		)
 		(pad "13" smd rect
@@ -10323,7 +10466,7 @@
 	(footprint "Package_SON:WSON-6_1.5x1.5mm_P0.5mm"
 		(layer "F.Cu")
 		(uuid "8e38cf93-f813-41f3-8a14-97c386036b84")
-		(at 164.31526 121.85478)
+		(at 165.752 125.595)
 		(descr "WSON6, http://www.ti.com/lit/ds/symlink/tlv702.pdf")
 		(tags "WSON6_1.5x1.5mm_P0.5mm")
 		(property "Reference" "U5"
@@ -10519,7 +10662,7 @@
 			(roundrect_rratio 0.25)
 			(net 75 "unconnected-(U5-NC-Pad1)")
 			(pinfunction "NC")
-			(pintype "no_connect")
+			(pintype "input+no_connect")
 			(uuid "d7d62448-da26-4c31-93f7-430e2f9ede5f")
 		)
 		(pad "2" smd roundrect
@@ -10527,7 +10670,7 @@
 			(size 0.28 0.75)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 50 "Net-(Q4-G)")
+			(net 76 "Net-(U5-Cout)")
 			(pinfunction "Cout")
 			(pintype "output")
 			(uuid "39580dcf-dcdf-4d3c-8ff2-77cca4ffb9ee")
@@ -10537,7 +10680,7 @@
 			(size 0.28 0.75)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 52 "Net-(Q5-G)")
+			(net 77 "Net-(U5-Dout)")
 			(pinfunction "Dout")
 			(pintype "output")
 			(uuid "ef45a292-1dcc-46e9-9e62-0666e5a258c9")
@@ -10574,6 +10717,147 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Package_SON.3dshapes/WSON-6_1.5x1.5mm_P0.5mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Resistor_SMD:R_0805_2012Metric"
+		(layer "F.Cu")
+		(uuid "92a39553-245f-4521-bf5a-aa1a33582963")
+		(at 174.3475 112.424)
+		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(tags "resistor")
+		(property "Reference" "R29"
+			(at 0 -1.65 0)
+			(layer "F.SilkS")
+			(uuid "84e35bb5-4b87-4287-bf13-665a9db77f05")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 1.65 0)
+			(layer "F.Fab")
+			(uuid "4f88ca35-f146-40b4-8f53-3842149c5e04")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e632c4a-c260-4701-8a15-269971d494ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2036608-82f4-4f01-b309-342fcaad245d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/97f5a305-c214-4154-8aa5-1943cb8e4826")
+		(sheetname "/")
+		(sheetfile "LION1CELL02.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.227064 -0.735)
+			(end 0.227064 -0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0a8fd954-9730-46cf-88b2-08896c074850")
+		)
+		(fp_line
+			(start -0.227064 0.735)
+			(end 0.227064 0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5077f6fd-7baa-48c3-b934-b79fdea704ce")
+		)
+		(fp_rect
+			(start -1.68 -0.95)
+			(end 1.68 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "1e53bbcc-6a77-40b9-9768-dfe59e344b67")
+		)
+		(fp_rect
+			(start -1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "bc0f00cc-18bd-417e-8c9e-acf318cef214")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "72a40c00-2e21-4614-a734-8b12379f1a38")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.9125 0)
+			(size 1.025 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.243902)
+			(net 77 "Net-(U5-Dout)")
+			(pintype "passive")
+			(uuid "83d6667c-fa09-48fd-affc-f9510e192dfa")
+		)
+		(pad "2" smd roundrect
+			(at 0.9125 0)
+			(size 1.025 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.243902)
+			(net 52 "Net-(Q5-G)")
+			(pintype "passive")
+			(uuid "585f03cb-5ecd-4a49-9fe2-2cfbc68d37c7")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11835,6 +12119,152 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Mlab_IO:SOT-23"
+		(layer "F.Cu")
+		(uuid "aae4e364-2551-40eb-a9c3-709d7b5f42f7")
+		(at 178.46259 110.0992)
+		(tags "SOT23")
+		(property "Reference" "D11"
+			(at 1.99898 -0.09906 90)
+			(layer "F.SilkS")
+			(uuid "13e0e2d6-a7bf-49e6-a63b-3606c29372eb")
+			(effects
+				(font
+					(size 0.762 0.762)
+					(thickness 0.11938)
+				)
+			)
+		)
+		(property "Value" "BAT54C"
+			(at 0.0635 0 0)
+			(layer "F.SilkS")
+			(uuid "cf30c3cb-d7a8-467b-a736-af592e80cad4")
+			(effects
+				(font
+					(size 0.50038 0.50038)
+					(thickness 0.09906)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "490c924f-fc80-4d4e-be59-9c3b0522dce5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Dual diode, common cathode on pin 3"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd017bac-2619-4416-9cf5-cba704a67f60")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/ce910fe4-87ec-421e-9f5c-3fc7e610e1b9")
+		(sheetname "/")
+		(sheetfile "LION1CELL02.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start -1.3335 -0.508)
+			(end -1.3335 0.508)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "aa38de8e-0440-45a8-80c9-9bffac6a67e9")
+		)
+		(fp_line
+			(start -1.3335 -0.508)
+			(end 1.27 -0.508)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9e199a0c-ce0c-4724-a629-c4bf278b804e")
+		)
+		(fp_line
+			(start 1.27 -0.508)
+			(end 1.27 0.508)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "dc64c02b-6ccc-4dde-8973-3e7c28617cd2")
+		)
+		(fp_line
+			(start 1.27 0.508)
+			(end -1.3335 0.508)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "50a9bcce-90ac-4769-bf50-2a4018acef7b")
+		)
+		(fp_circle
+			(center -1.17602 0.35052)
+			(end -1.30048 0.44958)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "fcc45598-78cc-4980-95a0-34669ed96934")
+		)
+		(pad "1" smd rect
+			(at -0.9525 1.09982)
+			(size 0.8001 1.00076)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 50 "Net-(Q4-G)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "07301ee9-db56-4f81-8502-5a02782f1fcd")
+		)
+		(pad "2" smd rect
+			(at 0.9525 1.09982)
+			(size 0.8001 1.00076)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 52 "Net-(Q5-G)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "4d373024-28e0-4465-95c4-81f338b0bb38")
+		)
+		(pad "3" smd rect
+			(at 0 -1.09982)
+			(size 0.8001 1.00076)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 71 "/ALERT")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "5e66bdf8-72b9-44a6-bb0f-b09cbe5d962d")
+		)
+		(embedded_fonts no)
+		(model "D:/Honza/library/KiCAD/MLAB_3D/IO/SOT23_3.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 0.4 0.4 0.4)
+			)
+			(rotate
+				(xyz 0 0 180)
 			)
 		)
 	)
