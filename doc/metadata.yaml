@@ -10,11 +10,11 @@ image_title: doc/img/LION2CELL01D_top_big.jpg
 images:
 - doc/gen/img/LION1CELL02-bottom.png
 - doc/gen/img/LION1CELL02-top.png
-- doc/gen/LION1CELL02-schematic.svg
-- doc/gen/img/LION1CELL02-top.svg
-- doc/gen/img/LION1CELL02-bottom.svg
-- hw/cam_profi/assembly/LION1CELL02-assembly_page_02.svg
 - hw/cam_profi/assembly/LION1CELL02-assembly_page_01.svg
+- hw/cam_profi/assembly/LION1CELL02-assembly_page_02.svg
+- doc/gen/LION1CELL02-schematic.svg
+- doc/gen/img/LION1CELL02-bottom.svg
+- doc/gen/img/LION1CELL02-top.svg
 issues: 0
 mark: 50
 mod_scheme: doc/gen/LION1CELL02-schematic.pdf
@@ -28,4 +28,4 @@ tags:
 - mlab-kicad
 - pcb
 title: LION1CELL02
-updated: '2026-01-25T22:12:09.200999+00:00'
+updated: '2026-05-06T11:55:48.848164+00:00'
